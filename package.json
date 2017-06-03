@@ -4,7 +4,8 @@
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x"
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "htmlhint": "^0.9.13"
   },
   "scripts": {
     "test": "editorconfig-cli"
