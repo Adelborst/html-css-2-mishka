@@ -10,7 +10,8 @@
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.4.0",
     "gulp-sass": "3.1.0",
-    "@htmlacademy/editorconfig-cli": "1.x"
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "htmlhint": "^0.9.13"
   },
   "scripts": {
     "test": "editorconfig-cli",
