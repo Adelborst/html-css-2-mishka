@@ -1,0 +1,24 @@
+.catalog-video {
+  @include centerer();
+  margin-bottom: 30px;
+}
+
+.video-container {
+  padding-bottom: 35px;
+}
+
+.video-container__heading {
+  font-weight: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $secondary-text-color;
+  min-height: 95px;
+}
+
+.video-container__content {
+  margin-bottom: 35px;
+}
+
+.video-container__description {
+  margin-bottom: 30px;
+}
