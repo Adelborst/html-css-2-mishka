@@ -1,0 +1,43 @@
+.main-nav__logo-wrapper {
+  min-height: 80px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px dash black;
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 0;
+}
+
+.main-nav__list {
+  // display: none;
+  @include reset-list();
+  position: relative;
+}
+
+.main-nav__list-wrapper {
+  position: relative;
+}
+
+.main-nav__list {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+
+.main-nav__item {
+  position: relative;
+  min-height: 80px;
+}
+
+.main-nav__item a {
+  display: block;
+  font-size: 17px;
+  min-height: 80px;
+  text-align: center;
+  // TODO: Центрировать по вертикали
+}

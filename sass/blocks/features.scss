@@ -1,0 +1,21 @@
+.features {
+  @include centerer();
+  padding-top: 35px;
+}
+
+.features__heading {
+  @include heading();
+}
+
+.features__list {
+  @include reset-list();
+}
+
+.features__item {
+  @include text-lg();
+  margin-bottom: 85px;
+
+  &:last-of-type {
+    margin-bottom: 55px;
+  }
+}

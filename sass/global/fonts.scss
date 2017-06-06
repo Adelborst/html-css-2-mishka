@@ -1,0 +1,48 @@
+@mixin base-font() {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $primary-text-color;
+  font-weight: $base-font-weight;
+  font-style: $base-font-style;
+  text-decoration: $base-text-decoration;
+  opacity: 1;
+}
+
+@mixin link-text() {
+  font-family: $base-font-family;
+  font-size: $font-size-lg;
+  line-height: $base-line-height;
+  color: $secondary-text-color;
+  font-weight: bold;
+  font-style: $base-font-style;
+  text-decoration: $base-text-decoration;
+}
+
+@mixin heading() {
+  color: $secondary-text-color;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+@mixin subheading() {
+  color: $secondary-text-color;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+@mixin text-lg() {
+  font-size: 17px;
+  line-height: 20px;
+  color: $black-color;
+  font-weight: bold;
+}
+
+@mixin text-sm() {
+  font-size: 15px;
+  line-height: 30px;
+  color: $primary-text-color;
+  font-weight: normal;
+}
