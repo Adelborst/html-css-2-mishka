@@ -1,0 +1,13 @@
+.reviews {
+  @include centerer();
+  padding-bottom: 50px;
+}
+
+.reviews__heading {
+  @include heading();
+  margin-bottom: 30px;
+}
+
+.reviews__toggle-wrapper {
+  margin-bottom: 40px;
+}

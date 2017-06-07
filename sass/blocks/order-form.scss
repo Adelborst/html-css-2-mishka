@@ -1,0 +1,9 @@
+.order-form {
+  @include centerer();
+  padding-bottom: 55px;
+}
+
+.order-form__lead {
+  font-size: 13px;
+  line-height: 24px;
+}

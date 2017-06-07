@@ -1,0 +1,22 @@
+.categories__list {
+  @include reset-list();
+}
+
+.categories a {
+  @include centerer();
+  font-size: 19px;
+  font-weight: 24px;
+  color: $secondary-text-color-invert;
+  display: block;
+  min-height: 103px;
+  padding-right: 160px;
+}
+
+.categories__item {
+  &:nth-child(2n+1) {
+    background-color: $promo-color-primary;
+  }
+  &:nth-child(2n) {
+    background-color: $promo-color-secondary;
+  }
+}

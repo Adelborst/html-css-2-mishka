@@ -1,0 +1,21 @@
+body {
+  background-color: white;
+  // Временно для удобства
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @include base-font();
+}
+
+a {
+  @include link-text();
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

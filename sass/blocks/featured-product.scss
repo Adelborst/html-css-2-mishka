@@ -1,0 +1,33 @@
+.featured-product__name {
+  @include heading();
+}
+
+.featured-product__promo {
+  font-size: 17px;
+  line-height: 20px;
+  color: $promo-color-primary;
+}
+
+.featured-product__price {
+  display: block;
+  font-size: 17px;
+  min-height: 75px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.featured-product__description {
+  font-size: 15px;
+}
+
+.featured-product__characteristics {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.featured-product__order {
+  display: block;
+  min-height: 50px;
+  text-align: center;
+  border: 2px solid $secondary-text-color;
+}

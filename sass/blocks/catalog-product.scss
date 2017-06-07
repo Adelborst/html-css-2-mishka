@@ -1,0 +1,33 @@
+.catalog-product__image {
+  margin-bottom: 30px;
+}
+
+.catalog-product__name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.catalog-product__details {
+  @include centerer();
+}
+
+.catalog-product__characteristics {
+  margin-bottom: 15px;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.catalog-product__buy-wrapper {
+  min-height: 75px;
+}
+
+.catalog-product__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $secondary-text-color;
+}

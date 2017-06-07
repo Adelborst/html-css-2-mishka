@@ -4,38 +4,43 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <h1 class="page-header__title">Мишка</h1> <!-- скрыт -->
+    <h1 class="page-header__title">Мишка</h1>
     <nav class="main-nav">
-      <a class="main-nav__logo" href="#"><img src="http://placehold.it/86x35" width="86" height="35" alt="">Mishka</a>
-      <button class="main-nav__toggler" href="#">Меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-        <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-        <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
-        <li class="main-nav__item main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
-      </ul>
+      <div class="main-nav__logo-wrapper">
+        <a href="index.html"><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
+        <button class="main-nav__toggle" href="#">Меню</button>
+      </div>
+      <div class="main-nav__list-wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a>Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </div>
     </nav>
     <section class="hero-unit">
       <h2 class="hero-unit__heading">Вязание на заказ</h2>
     </section>
   </header>
   <main class="page-body">
-    <form method="post" action="https://echo.htmlacademy.ru/">
-      <p class="form-lead">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
+    <form method="post" action="https://echo.htmlacademy.ru/" class="order-form">
+      <p class="order-form__lead">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
         детали.
       </p>
       <fieldset class="form-group">
         <legend class="form-group__name">Тип</legend>
         <ul class="radio-list">
           <li class="radio-list__item">
-            <label class="radio"><input type="radio" name="category" value="interior" id="interior" checked>Аксессуар для интерьера</label>
+            <label class="radio form-group__label"><input type="radio" name="category" value="interior" id="interior" checked>Аксессуар для интерьера</label>
           </li>
           <li class="radio-list__item">
-            <label class="radio"><input type="radio" name="category" value="toy" id="toy">Детская игрушка</label>
+            <label class="radio form-group__label"><input type="radio" name="category" value="toy" id="toy">Детская игрушка</label>
           </li>
         </ul>
       </fieldset>
@@ -43,37 +48,37 @@
         <legend class="form-group__name">Цвет</legend>
         <ul class="checkbox-list">
           <li class="checkbox-list__item">
-            <label class="checkbox"><input type="checkbox" name="color" value="white" id="white" checked> Белый</label>
+            <label class="checkbox form-group__label"><input type="checkbox" name="color" value="white" id="white" checked> Белый</label>
           </li>
           <li class="checkbox-list__item">
-            <label class="checkbox"><input type="checkbox" name="color" value="gray" id="gray" checked>Серый</label>
+            <label class="checkbox form-group__label"><input type="checkbox" name="color" value="gray" id="gray" checked>Серый</label>
           </li>
           <li class="checkbox-list__item">
-            <label class="checkbox"><input type="checkbox" name="color" value="tiffany" id="tiffany">«Тиффани»</label>
+            <label class="checkbox form-group__label"><input type="checkbox" name="color" value="tiffany" id="tiffany">«Тиффани»</label>
           </li>
           <li class="checkbox-list__item">
-            <label class="checkbox"><input type="checkbox" name="color" value="black" id="black">Черный</label>
+            <label class="checkbox form-group__label"><input type="checkbox" name="color" value="black" id="black">Черный</label>
           </li>
           <li class="checkbox-list__item">
-            <label class="checkbox"><input type="checkbox" name="color" value="pink" id="pink">Розовый</label>
+            <label class="checkbox form-group__label"><input type="checkbox" name="color" value="pink" id="pink">Розовый</label>
           </li>
           <li class="checkbox-list__item">
-            <label class="checkbox"><input type="checkbox" name="color" value="orange" id="orange">Оранжевый</label>
+            <label class="checkbox form-group__label"><input type="checkbox" name="color" value="orange" id="orange">Оранжевый</label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form-group">
         <legend class="form-group__name">ФИО</legend>
         <section class="form-field">
-          <label>Имя:</label>
+          <label class="form-group__label">Имя:</label>
           <input type="text" name="first-name" placeholder="Введите ваше имя*">
         </section>
         <section class="form-field">
-          <label>Фамилия:</label>
+          <label class="form-group__label">Фамилия:</label>
           <input type="text" name="last-name" placeholder="Укажите фамилию*">
         </section>
         <section class="form-field">
-          <label>Отчество:</label>
+          <label class="form-group__label">Отчество:</label>
           <input type="text" name="middle-name" placeholder="Отчество, если желаете">
         </section>
       </fieldset>
@@ -106,7 +111,7 @@
       </ul>
     </section>
     <section class="copyright">
-      <b class="copyright__developer">Разработано</b>
+      <a href="http://htmlacademy.ru" class="copyright__developer">Разработано</a>
     </section>
   </footer>
 </body>

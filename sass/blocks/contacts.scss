@@ -1,0 +1,27 @@
+.contacts {
+  @include centerer();
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+.contacts__heading {
+  @include subheading();
+  margin-bottom: 35px;
+}
+
+.contacts__details {
+  margin-bottom: 40px;
+}
+
+.contacts__details,
+.contacts__details a {
+  @include text-sm();
+}
+
+
+.contacts__map {
+  background-image: url("/img/map-mobile@1x.jpg");
+  margin-bottom: 40px;
+  // temp
+  overflow: hidden;
+}
