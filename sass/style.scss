@@ -1,14 +1,12 @@
 @import "global/variables";
 @import "mixins";
-@import "global/fonts";
+@import "mixins-fonts";
 @import "global/layout";
 
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/btn";
 @import "blocks/hero-unit";
-
-@import "mixins";
 
 @import "blocks/page-footer";
 

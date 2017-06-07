@@ -2,16 +2,3 @@
   @include centerer();
   background-color: #f1f1f1;
 }
-
-.social {
-  @include footer-block();
-}
-
-.social__list {
-  @include reset-list();
-  text-align: center;
-}
-
-.social__item {
-  display: inline-block;
-}
