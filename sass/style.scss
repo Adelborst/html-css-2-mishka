@@ -8,16 +8,19 @@
 @import "blocks/btn";
 @import "blocks/hero-unit";
 
+@import "blocks/page";
+
 @import "blocks/page-footer";
 
 @import "blocks/contacts";
 
 @import "blocks/categories";
 
+@import "blocks/featured-products";
 @import "blocks/featured-product";
 
-@import "blocks/features";
-
+@import "blocks/about-us";
+@import "blocks/our-advantages";
 @import "blocks/reviews";
 
 @import "blocks/copyright";
@@ -25,6 +28,9 @@
 @import "blocks/catalog";
 @import "blocks/catalog-product";
 @import "blocks/catalog-video";
+@import "blocks/video-container";
 
 @import "blocks/order-form";
 @import "blocks/form-group";
+
+@import "blocks/social";

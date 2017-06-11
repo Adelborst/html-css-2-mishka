@@ -1,0 +1,17 @@
+.our-advantages__heading {
+  margin-top: 0;
+  @include heading();
+}
+
+.our-advantages__list {
+  @include reset-list();
+}
+
+.our-advantages__item {
+  @include text-lg();
+  margin-bottom: 85px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

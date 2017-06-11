@@ -7,29 +7,31 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
   <header class="page-header">
-    <h1 class="page-header__title">Мишка</h1>
-    <nav class="main-nav">
-      <div class="main-nav__logo-wrapper">
-        <a href="index.html"><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
-        <button class="main-nav__toggle" href="#">Меню</button>
-      </div>
-      <div class="main-nav__list-wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a>Вязание на заказ</a></li>
-          <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section class="hero-unit">
-      <h2 class="hero-unit__heading">Вязание на заказ</h2>
-    </section>
+    <div class="page-header__outer">
+      <h1 class="page-header__title">Мишка</h1>
+      <nav class="main-nav">
+        <div class="main-nav__logo">
+          <a href="index.html"><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
+          <input type="checkbox" class="main-nav__toggle">
+        </div>
+        <div class="main-nav__list-wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item"><a>Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hero-unit">
+        <h2 class="hero-unit__heading">Вязание на заказ</h2>
+      </section>
+    </div>
   </header>
-  <main class="page-body">
-    <form method="post" action="https://echo.htmlacademy.ru/" class="order-form">
+  <main class="page-body order-form">
+    <form class="order-form__outer order-form__inner" method="post" action="https://echo.htmlacademy.ru/">
       <p class="order-form__lead">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
         детали.
       </p>
@@ -103,16 +105,18 @@
     </form>
   </main>
   <footer class="page-footer">
-    <section class="social">
-      <ul class="social__list">
-        <li class="social__item social__item--in"><a href="#">Instagram</a></li>
-        <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
-        <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
-      </ul>
-    </section>
-    <section class="copyright">
-      <a href="http://htmlacademy.ru" class="copyright__developer">Разработано</a>
-    </section>
+    <div class="page-footer__outer page-footer__inner">
+      <section class="social">
+        <ul class="social__list">
+          <li class="social__item social__item--in"><a href="#">Instagram</a></li>
+          <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
+          <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <a href="http://htmlacademy.ru" class="copyright__developer">Разработано</a>
+      </section>
+    </div>
   </footer>
 </body>
 

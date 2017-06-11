@@ -1,7 +1,20 @@
 .catalog {
   padding-top: 30px;
+
 }
 
-.catalog__item {
+.catalog__outer {
+  @include layout-centered();
+}
+
+.catalog__inner {
+  @include padder();
+}
+
+.catalog__list {
+  @include reset-list();
+}
+
+.catalog__item:not(:last-of-type) {
   margin-bottom: 30px;
 }

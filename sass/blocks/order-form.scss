@@ -1,9 +1,19 @@
 .order-form {
-  @include centerer();
+  // @include layout-centered();
   padding-bottom: 55px;
+
+}
+
+.order-form__outer {
+  @include layout-centered();
+}
+
+.order-form__inner {
+  @include padder();
 }
 
 .order-form__lead {
+  margin: 0;
   font-size: 13px;
   line-height: 24px;
 }

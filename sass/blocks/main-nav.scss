@@ -1,4 +1,8 @@
-.main-nav__logo-wrapper {
+.main-nav {
+  @include padder();
+}
+
+.main-nav__logo {
   min-height: 80px;
   text-align: center;
   padding-top: 20px;

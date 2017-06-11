@@ -1,5 +1,6 @@
 .hero-unit {
-  @include centerer();
+  // @include layout-centered();
+  @include padder();
   min-height: 180px;
   background-color: #f1f1f1;
 
@@ -7,7 +8,7 @@
     background-image: url("/img/hero-mobile@1x.jpg");
     background-position: 50% 0;
     background-repeat: no-repeat;
-  min-height: 285px;
+    min-height: 285px;
   }
 }
 

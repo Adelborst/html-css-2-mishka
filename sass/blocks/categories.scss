@@ -1,9 +1,12 @@
+.categories {
+  // @include layout-centered();
+}
+
 .categories__list {
   @include reset-list();
 }
 
 .categories a {
-  @include centerer();
   font-size: 19px;
   font-weight: 24px;
   color: $secondary-text-color-invert;
@@ -13,6 +16,7 @@
 }
 
 .categories__item {
+  @include padder();
   &:nth-child(2n+1) {
     background-color: $promo-color-primary;
   }

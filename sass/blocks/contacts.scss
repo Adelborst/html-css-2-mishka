@@ -1,10 +1,20 @@
 .contacts {
-  @include centerer();
+  // @include layout-centered();
   padding-top: 45px;
   padding-bottom: 40px;
+
+}
+
+.contacts__outer {
+  @include layout-centered();
+}
+
+.contacts__inner {
+  @include padder();
 }
 
 .contacts__heading {
+  margin-top: 0;
   @include subheading();
   margin-bottom: 35px;
 }
@@ -24,4 +34,5 @@
   margin-bottom: 40px;
   // temp
   overflow: hidden;
+  background-repeat: no-repeat;
 }

@@ -4,9 +4,30 @@
   padding: 0;
 }
 
-@mixin centerer() {
-  padding-left: 30px;
-  padding-right: 30px;
+@mixin layout-centered() {
+  margin: 0 auto;
+  width: 320px;
+
+  // @media #{$tablet-conditional-expression} {
+  //   width: 670px;
+  // }
+
+  // @media #{$desktop-conditional-expression} {
+  //   width: 1050px;
+  // }
+}
+
+@mixin padder() {
+  box-sizing: border-box;
+  padding: 0 30px;
+
+  // @media #{$tablet-conditional-expression} {
+  //   padding: 0 50px;
+  // }
+
+  // @media #{$desktop-conditional-expression} {
+  //   width: 1050px;
+  // }
 }
 
 @mixin footer-block() {

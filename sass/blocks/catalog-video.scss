@@ -1,4 +1,14 @@
 .catalog-video {
-  @include centerer();
-  margin-bottom: 30px;
+  // @include layout-centered();
+  // margin-bottom: 30px;
+
+}
+
+
+.catalog-video__outer {
+  @include layout-centered();
+}
+
+.catalog-video__inner {
+  @include padder();
 }

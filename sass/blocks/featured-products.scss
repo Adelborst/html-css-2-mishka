@@ -1,0 +1,14 @@
+.featured-products {
+  // @include layout-centered();
+  padding-bottom: 40px;
+
+}
+
+.featured-products__outer {
+  @include layout-centered();
+}
+
+.featured-products__inner {
+  @include padder();
+}
+

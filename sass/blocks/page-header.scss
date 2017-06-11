@@ -1,3 +1,15 @@
+.page-header {
+
+}
+
+.page-header__outer {
+  @include layout-centered();
+}
+
+.page-header__inner {
+  @include padder();
+}
+
 .page-header__title {
   position: absolute;
   top: -9999px;

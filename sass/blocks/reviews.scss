@@ -1,9 +1,15 @@
 .reviews {
-  @include centerer();
+  // @include layout-centered();
   padding-bottom: 50px;
+
+}
+
+.reviews__outer {
+  @include layout-centered();
 }
 
 .reviews__heading {
+  margin-top: 0;
   @include heading();
   margin-bottom: 30px;
 }
