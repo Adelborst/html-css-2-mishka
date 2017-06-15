@@ -1,22 +1,28 @@
 .categories {
-  // @include layout-centered();
+  @include padder();
 }
 
 .categories__list {
   @include reset-list();
+
+  display: flex;
+  @media #{$mobile-condition} {
+    flex-direction: column;
+  }
 }
 
 .categories a {
   font-size: 19px;
-  font-weight: 24px;
+  font-weight: bold;
   color: $secondary-text-color-invert;
   display: block;
   min-height: 103px;
-  padding-right: 160px;
+  text-align: center;
+  // padding-right: 160px;
 }
 
 .categories__item {
-  @include padder();
+  flex-grow: 1;
   &:nth-child(2n+1) {
     background-color: $promo-color-primary;
   }

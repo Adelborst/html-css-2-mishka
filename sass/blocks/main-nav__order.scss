@@ -1,0 +1,65 @@
+@media #{$mobile-condition} {
+  .main-nav__deals-list,
+  .main-nav__delivery {
+    display: none;
+  }
+}
+
+@media #{$tablet-condition} {
+  .main-nav__deals-list {
+    display: none;
+  }
+  .main-nav__delivery {
+    display: initial;
+  }
+
+  .main-nav__logo {
+    order: -10;
+  }
+
+  .main-nav__search {
+    order: -9;
+  }
+
+  .main-nav__cart {
+    order: -8;
+  }
+
+  .main-nav__primary-list {
+    order: -7;
+  }
+
+  .main-nav__delivery {
+    order: -6;
+  }
+}
+
+@media #{$desktop-condition} {
+  .main-nav__deals-list,
+  .main-nav__deals-list {
+    display: initial;
+  }
+
+  .main-nav__primary-list {
+    order: -10;
+  }
+
+  .main-nav__logo {
+    order: -9;
+  }
+
+  .main-nav__search {
+    order: -8;
+  }
+
+  .main-nav__cart {
+    order: -7;
+  }
+  .main-nav__deals-list {
+    order: -6;
+  }
+
+  .main-nav__delivery {
+    order: -5;
+  }
+}

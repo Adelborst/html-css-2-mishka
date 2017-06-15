@@ -1,5 +1,6 @@
-// $tablet-conditional-expression: "(min-width: 768px)";
-// $desktop-conditional-expression: "(min-width: 1150px)";
+$mobile-condition: "(max-width: 767px)";
+$tablet-condition: "(min-width: 768px)";
+$desktop-condition: "(min-width: 1150px)";
 
 $gray-color: #444444;
 $black-color: #000000;
@@ -20,3 +21,6 @@ $font-size-lg: 15px;
 
 $promo-color-primary: #63d1bb;
 $promo-color-secondary: #56c3b2;
+
+$mobile-menu-display: none;
+// $mobile-menu-display: initial;
