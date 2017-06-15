@@ -12,24 +12,23 @@
 <body class="page">
   <header class="page-header page-header__outer page-header--toys-bg">
     <nav class="main-nav">
-      <input type="checkbox" class="main-nav__toggle">
-      <div class="main-nav__container">
-        <div class="main-nav__logo">
-          <a><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
-        </div>
-        <!--<div class="wrapper">-->
-        <ul class="main-nav__primary-list">
-          <li class="main-nav__primary-item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__primary-item"><a href="form.html">Вязание на заказ</a></li>
-        </ul>
+      <div class="main-nav__logo">
+        <a><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
+      </div>
+      <button type="button" class="main-nav__toggle">X</button>
+      <ul class="main-nav__primary-list">
+        <li class="main-nav__primary-item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__primary-item"><a href="form.html">Вязание на заказ</a></li>
+      </ul>
+      <div class="main-nav__search-and-cart">
         <div class="main-nav__search"><a href="#">Поиск по сайту</a></div>
         <div class="main-nav__cart"><a href="#">Корзина: пока пуста</a></div>
-        <ul class="main-nav__deals-list">
-          <li class="main-nav__deals-item"><a href="#">Новые поступления</a></li>
-          <li class="main-nav__deals-item"><a href="#">Распродажа</a></li>
-        </ul>
-        <div class="main-nav__delivery">Бесплатная доставка по России</div>
       </div>
+      <ul class="main-nav__deals-list">
+        <li class="main-nav__deals-item"><a href="#">Новые поступления</a></li>
+        <li class="main-nav__deals-item"><a href="#">Распродажа</a></li>
+      </ul>
+      <div class="main-nav__delivery">Бесплатная доставка по России</div>
     </nav>
     <!--<h2 class="page-header__heading">Милые штуки ручной работы для дома</h2>-->
     <section class="categories">
@@ -63,8 +62,10 @@
     <section class="featured-products">
       <div class="featured-products__outer featured-products__inner">
         <article class="featured-product">
-          <h3 class="featured-product__name">Вязаные корзинки</h3>
-          <strong class="featured-product__promo">Товар недели</strong>
+          <header class="featured-product__heading">
+            <h3 class="featured-product__name">Вязаные корзинки</h3>
+            <strong class="featured-product__promo">Товар недели</strong>
+          </header>
           <section class="featured-product__details">
             <p class="featured-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <table class="featured-product__characteristics">

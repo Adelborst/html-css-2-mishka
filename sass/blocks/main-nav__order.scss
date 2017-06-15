@@ -17,20 +17,16 @@
     order: -10;
   }
 
-  .main-nav__search {
+  .main-nav__search-and-cart {
     order: -9;
   }
 
-  .main-nav__cart {
+  .main-nav__primary-list {
     order: -8;
   }
 
-  .main-nav__primary-list {
-    order: -7;
-  }
-
   .main-nav__delivery {
-    order: -6;
+    order: -7;
   }
 }
 
@@ -48,18 +44,15 @@
     order: -9;
   }
 
-  .main-nav__search {
+  .main-nav__search-and-cart {
     order: -8;
   }
 
-  .main-nav__cart {
-    order: -7;
-  }
   .main-nav__deals-list {
-    order: -6;
+    order: -7;
   }
 
   .main-nav__delivery {
-    order: -5;
+    order: -6;
   }
 }
