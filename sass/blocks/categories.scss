@@ -23,6 +23,7 @@
 
 .categories__item {
   flex-grow: 1;
+  flex-basis: 0;
   &:nth-child(2n+1) {
     background-color: $promo-color-primary;
   }
