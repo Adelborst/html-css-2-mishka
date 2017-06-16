@@ -62,10 +62,8 @@
     <section class="featured-products">
       <div class="featured-products__outer featured-products__inner">
         <article class="featured-product">
-          <header class="featured-product__heading">
-            <h3 class="featured-product__name">Вязаные корзинки</h3>
-            <strong class="featured-product__promo">Товар недели</strong>
-          </header>
+          <h3 class="featured-product__name">Вязаные корзинки</h3>
+          <strong class="featured-product__promo">Товар недели</strong>
           <section class="featured-product__details">
             <p class="featured-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <table class="featured-product__characteristics">
@@ -97,38 +95,42 @@
       <div class="about-us__outer about-us__inner">
         <section class="our-advantages">
           <h2 class="our-advantages__heading">Коротко о нас:</h2>
-          <ul class="our-advantages__list">
-            <li class="our-advantages__item our-advantages__item--eco">
-              Экологически чистые материалы
-            </li>
-            <li class="our-advantages__item our-advantages__item--cash">
-              Скандинавский стиль по российской цене
-            </li>
-            <li class="our-advantages__item our-advantages__item--love">
-              Увеличивает лайки на фотографиях
-            </li>
-            <li class="our-advantages__item our-advantages__item--clew">
-              Связано вручную с любовью и умилением
-            </li>
-            <li class="our-advantages__item our-advantages__item--rocket">
-              Поддержка отечественного производителя
-            </li>
-            <li class="our-advantages__item our-advantages__item--gift">
-              Поставляется в подарочной упаковке
-            </li>
-          </ul>
+          <div class="our-advantages__container">
+            <ul class="our-advantages__list">
+              <li class="our-advantages__item our-advantages__item--eco">
+                Экологически чистые материалы
+              </li>
+              <li class="our-advantages__item our-advantages__item--cash">
+                Скандинавский стиль по российской цене
+              </li>
+              <li class="our-advantages__item our-advantages__item--love">
+                Увеличивает лайки на фотографиях
+              </li>
+            </ul>
+            <ul class="our-advantages__list">
+              <li class="our-advantages__item our-advantages__item--clew">
+                Связано вручную с любовью и умилением
+              </li>
+              <li class="our-advantages__item our-advantages__item--rocket">
+                Поддержка отечественного производителя
+              </li>
+              <li class="our-advantages__item our-advantages__item--gift">
+                Поставляется в подарочной упаковке
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="reviews">
           <h2 class="reviews__heading">Отзывы</h2>
-          <blockquote class="review">
-            <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+          <blockquote class="reviews__text">
+            <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
               В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также
               набирают больше лайков!</p>
-            <cite class="review__author">
-                <span class="review__author-name">Анастасия Красильникова</span>
-                <span class="review__author-username">@misssssiskras</span>
-              </cite>
           </blockquote>
+          <cite class="reviews__author">
+            <span class="reviews__author-name">Анастасия Красильникова</span><br>
+            <span class="reviews__author-username">@misssssiskras</span>
+          </cite>
           <div class="reviews__toggle-wrapper">
             <button href="#" class="reviews__toggle reviews__toggle--prev">Назад</button>
             <button href="#" class="reviews__toggle reviews__toggle--next">Вперёд</button>
@@ -138,29 +140,34 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__outer">
-        <h3 class="contacts__heading contacts__inner">Контакты</h3>
-        <table class="contacts__details contacts__inner">
-          <tr>
-            <td>e-mail:</td>
-            <td><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-          </tr>
-          <tr>
-            <td>адрес:</td>
-            <td>
-              <address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
-            </td>
-          </tr>
-        </table>
-        <div class="contacts__map">
-          <img src="/img/map-mobile@1x.jpg" width="320" height="457" alt="">
+      <div class="contacts__outer contacts__inner">
+        <div class="contacts__container">
+          <h3 class="contacts__heading">Контакты</h3>
+          <table class="contacts__details">
+            <tr>
+              <td>e-mail:</td>
+              <td><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+            </tr>
+            <tr>
+              <td>адрес:</td>
+              <td>
+                <address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+              </td>
+            </tr>
+          </table>
+          <div class="contacts__map">
+            <img src="/img/map-mobile@1x.jpg" width="320" height="457" alt="">
+          </div>
+          <a href="#" class="btn contacts__write">Напишите нам</a>
         </div>
-        <a href="#" class="btn contacts__write-to-us contacts__inner">Напишите нам</a>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__outer page-footer__inner">
+    <div class="page-footer__outer page-footer__inner page-footer__container">
+      <div class="footer-logo">
+        <a><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
+      </div>
       <section class="social">
         <ul class="social__list">
           <li class="social__item social__item--in"><a href="#">Instagram</a></li>

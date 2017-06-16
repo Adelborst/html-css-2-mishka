@@ -5,12 +5,16 @@
 
 .our-advantages__list {
   @include reset-list();
+  @media #{$mobile-condition} {
+    &:first-of-type {
+      margin-bottom: 85px;
+    }
+  }
 }
 
 .our-advantages__item {
   @include text-lg();
   margin-bottom: 85px;
-
   &:last-of-type {
     margin-bottom: 0;
   }

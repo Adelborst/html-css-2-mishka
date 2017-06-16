@@ -1,68 +1,61 @@
 .featured-product {
   display: flex;
-
   flex-direction: column;
-
   @media #{$tablet-condition} {
     flex-direction: column;
   }
-
   @media #{$desktop-condition} {
     flex-direction: row;
   }
 }
 
-
-
 @media #{$mobile-condition} {
-  .featured-product__heading {
-      order: -10;
+  .featured-product__name {
+    order: -10;
   }
-
   .featured-product__promo {
     order: -9;
   }
-
   .featured-product__details {
     order: -8;
   }
-
   .featured-product__image {
     order: -7;
   }
-
   .featured-product__order {
     order: -6;
   }
 }
-
 
 @media #{$tablet-condition} {
-  .featured-product__heading {
-      order: -10;
+  .featured-product__name {
+    order: -10;
   }
-
   .featured-product__promo {
     order: -9;
   }
-
   .featured-product__details {
     order: -8;
   }
-
   .featured-product__image {
     order: -7;
   }
-
   .featured-product__order {
     order: -6;
   }
 }
 
-.featured-product__heading {
-  @media #{$tablet-condition} {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+@media #{$tablet-condition} {
+  .featured-product__name {
+    width: (3 / 4) * 100 + 0%;
   }
+
+  .featured-product__promo {
+    width: (1 / 4) * 100 + 0%;
+  }
+}
+
+@media #{$desktop-condition} {
+
+
 }

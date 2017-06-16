@@ -1,0 +1,41 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media #{$tablet-condition} {
+  .reviews {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .reviews__heading {
+  }
+  .reviews__heading {
+    order: -10;
+    // flex-basis: (3/4) * 100%;
+    align-self: baseline;
+  }
+  .reviews__write {
+    order: -9;
+    align-self: baseline;
+  }
+  .reviews__text {
+    order: -8;
+    flex-basis: 100%;
+  }
+  .reviews__author {
+    order: -7;
+  }
+  .reviews__toggle-wrapper {
+    order: -6;
+  }
+}
+
+@media #{$desktop-condition} {
+  .reviews {
+    @include desktop-pad-left();
+  }
+}
+
+@media #{$mobile-condition} {}

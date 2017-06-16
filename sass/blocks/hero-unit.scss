@@ -1,7 +1,6 @@
 .hero-unit {
   min-height: 180px;
-  background-color: #f1f1f1;
-
+  background-color: $gray-light-color;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
