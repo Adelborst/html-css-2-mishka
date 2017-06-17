@@ -1,0 +1,32 @@
+@media #{$tablet-condition} {
+  .top-nav__logo {
+    order: -10;
+  }
+  .top-nav__search-and-cart {
+    order: -9;
+  }
+  .top-nav__primary-list {
+    order: -8;
+  }
+  .top-nav__delivery {
+    order: -7;
+  }
+}
+
+@media #{$desktop-condition} {
+  .top-nav__primary-list {
+    order: -10;
+  }
+  .top-nav__logo {
+    order: -9;
+  }
+  .top-nav__search-and-cart {
+    order: -8;
+  }
+  .top-nav__deals-list {
+    order: -7;
+  }
+  .top-nav__delivery {
+    order: -6;
+  }
+}

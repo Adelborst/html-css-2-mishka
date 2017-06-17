@@ -1,10 +1,11 @@
 .categories {
-  @include padder();
+  @media #{$tablet-condition} {
+    @include container();
+  }
 }
 
 .categories__list {
   @include reset-list();
-
   display: flex;
   @media #{$mobile-condition} {
     flex-direction: column;
@@ -16,9 +17,25 @@
   font-weight: bold;
   color: $secondary-text-color-invert;
   display: block;
-  min-height: 103px;
-  text-align: center;
-  // padding-right: 160px;
+  outline: 1px dashed black;
+  display: flex;
+  align-items: center;
+  @media #{$mobile-condition} {
+    box-sizing: border-box;
+    height: 103px;
+    margin: 0 auto;
+    width: 320px;
+    padding: 0 160px 0 30px;
+  }
+  @media #{$tablet-condition} {
+    height: 120px;
+    padding-left: 35px;
+    padding-right: 20px + 165px;
+  }
+  @media #{$desktop-condition} {
+    padding-left: 40px;
+    padding-right: 25px + 350px;
+  }
 }
 
 .categories__item {

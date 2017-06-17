@@ -4,7 +4,10 @@
 @import "global/layout";
 @import "blocks/container";
 
+@import "blocks/top-nav";
+@import "blocks/top-nav.order";
 @import "blocks/page-header";
+@import "blocks/page-header2";
 @import "blocks/main-nav";
 @import "blocks/main-nav__order";
 @import "blocks/btn";

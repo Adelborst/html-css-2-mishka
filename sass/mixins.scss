@@ -43,3 +43,42 @@
   @include desktop-pad-left();
   @include desktop-pad-right();
 }
+
+@mixin container() {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+  outline: 1px dashed black;
+  @media #{$tablet-condition} {
+    width: 670px;
+    padding: 0 50px;
+  }
+  @media #{$desktop-condition} {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
+
+@mixin center-flex() {
+  display: flex;
+  align-items: center;
+}
+
+// @mixin container2() {
+//   width: 260px;
+//   padding: 0 30px;
+//   margin: 0 auto;
+//   @media #{$tablet-condition} {
+//     width: 670px;
+//     padding: 0 50px;
+//   }
+//   @media #{$desktop-condition} {
+//     width: 1050px;
+//     padding: 0 50px;
+//   }
+// }
+
+.container {
+  @include container();
+}
+
