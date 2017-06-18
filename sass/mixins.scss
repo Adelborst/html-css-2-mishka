@@ -8,7 +8,7 @@
   margin: 0 auto;
   width: 320px;
   @media #{$tablet-condition} {
-    width: 670px;
+    width: 668px;
   }
   @media #{$desktop-condition} {
     width: 1150px;
@@ -48,14 +48,29 @@
   width: 260px;
   margin: 0 auto;
   padding: 0 30px;
-  // outline: 1px dashed black;
+  outline: 1px dashed black;
   @media #{$tablet-condition} {
-    width: 670px;
+    width: 668px;
     padding: 0 50px;
   }
   @media #{$desktop-condition} {
     width: 1050px;
     padding: 0 50px;
+  }
+}
+
+@mixin container0() {
+  width: initial;
+  margin: initial;
+  padding: initial;
+  outline: none;
+  @media #{$tablet-condition} {
+    width: initial;
+    padding: initial;
+  }
+  @media #{$desktop-condition} {
+    width: initial;
+    padding: initial;
   }
 }
 

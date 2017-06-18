@@ -1,7 +1,15 @@
 .featured-products {
   // @include layout-centered();
-  padding-bottom: 40px;
-
+  padding-top: 30px;
+  padding-bottom: 42px;
+  @media #{$tablet-condition} {
+    padding-top: 48px;
+    padding-bottom: 69px;
+  }
+  @media #{$desktop-condition} {
+    padding-top: 71px;
+    padding-bottom: 96px;
+  }
 }
 
 .featured-products__wrapper {

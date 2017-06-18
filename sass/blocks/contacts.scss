@@ -1,40 +1,96 @@
 .contacts {
-  // @include layout-centered();
   padding-top: 45px;
   padding-bottom: 40px;
-
+  @media #{$desktop-condition} {
+    @include container();
+  }
 }
 
-.contacts__outer {
-  @include layout-centered();
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @media #{$desktop-condition} {
+    height: 457px;
+  }
 }
 
-.contacts__inner {
-  @include padder();
+.contacts__wrapper {
+  @include container();
 }
 
 .contacts__heading {
   margin-top: 0;
   @include subheading();
   margin-bottom: 35px;
+  @include container();
+  @media #{$desktop-condition} {
+    @include container0();
+  }
+  @media #{$desktop-condition} {
+    padding-left: 175px;
+  }
 }
 
-.contacts__details {
+.contacts__table {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  @include container();
+  @media #{$desktop-condition} {
+    @include container0();
+  }
+  @media #{$desktop-condition} {
+    padding-left: 175px;
+  }
 }
 
-.contacts__details,
-.contacts__details a {
+.contacts__table-row {
+  display: table-row;
+  @media #{$tablet-condition} {
+    display: table-cell;
+    width: 50%;
+  }
+  @media #{$desktop-condition} {
+    display: table-row;
+    width: initial;
+  }
+}
+
+.contacts__table-cell {
+  display: table-cell;
+}
+
+.contacts__table,
+.contacts__table a {
   @include text-sm();
 }
 
-
 .contacts__map {
+  width: 320px;
+  height: 457px;
+  margin: 0 auto;
+  background-color: $gray-light-color;
   background-image: url("/img/map-mobile@1x.jpg");
-  margin-bottom: 40px;
-  // temp
-  overflow: hidden;
   background-repeat: no-repeat;
+  background-position: 50% 50%; // margin-bottom: 40px;
+  // temp
+  // overflow: hidden;
+  @media #{$tablet-condition} {
+    width: 768px;
+  }
+  @media #{$desktop-condition} {
+    width: 525px;
+    margin: initial;
+    align-self: flex-end;
+  }
+}
+
+.contacts__write {
+  @include container();
+  @media #{$desktop-condition} {
+    @include container0();
+  }
+  @media #{$desktop-condition} {
+    padding-left: 175px;
+  }
 }

@@ -1,41 +1,14 @@
-.contacts__container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-@media #{$tablet-condition} {
-  .contacts__details tr {
-    display: table-cell;
-  }
-}
-
 @media #{$desktop-condition} {
-  .contacts__container {
-    @include desktop-pad-left();
-  }
-  .contacts__details tr {
-    display: table-row;
-  }
   .contacts__heading {
     order: -10;
-    width: 350px;
   }
-  .contacts__details {
+  .contacts__table {
     order: -9;
-    width: 350px;
   }
   .contacts__write {
     order: -8;
-    width: 350px;
   }
   .contacts__map {
     order: -7;
-  }
-}
-
-@media #{$mobile-condition} {
-  .contacts__details tr {
-    display: table-row;
   }
 }

@@ -54,10 +54,12 @@
     <section class="featured-products">
       <div class="featured-products__wrapper">
         <article class="featured-product">
-          <h3 class="featured-product__name">Вязаные корзинки</h3>
-          <strong class="featured-product__promo">Товар недели</strong>
-          <div class="featured-product__content">
-            <section class="featured-product__details">
+          <header class="featured-product__heading">
+            <h3 class="featured-product__name">Вязаные корзинки</h3>
+            <strong class="featured-product__promo">Товар недели</strong>
+          </header>
+          <section class="featured-product__body">
+            <div class="featured-product__details">
               <p class="featured-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
               <table class="featured-product__characteristics">
                 <tr>
@@ -73,15 +75,15 @@
                   <td>15 см</td>
                 </tr>
               </table>
-            </section>
-            <section class="featured-product__order">
-              <b class="featured-product__price">Цена: 990 руб.</b>
-              <a href="#" class="featured-product__order-btn btn">Заказать</a>
-            </section>
+            </div>
             <div class="featured-product__image">
               <img src="http://placehold.it/260x315" width="260" height="315" alt="">
             </div>
-          </div>
+            <div class="featured-product__buy">
+              <b class="featured-product__price">Цена: 990 руб.</b>
+              <a href="#" class="featured-product__order btn">Заказать</a>
+            </div>
+          </section>
         </article>
       </div>
     </section>
@@ -132,26 +134,24 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__outer contacts__inner">
-        <div class="contacts__container">
-          <h3 class="contacts__heading">Контакты</h3>
-          <table class="contacts__details">
-            <tr>
-              <td>e-mail:</td>
-              <td><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-            </tr>
-            <tr>
-              <td>адрес:</td>
-              <td>
-                <address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
-              </td>
-            </tr>
-          </table>
-          <div class="contacts__map">
-            <img src="/img/map-mobile@1x.jpg" width="320" height="457" alt="">
+      <div class="contacts__container">
+        <h3 class="contacts__heading">Контакты</h3>
+        <div class="contacts__table">
+          <div class="contacts__table-row">
+            <div class="contacts__table-cell">e-mail:</div>
+            <div class="contacts__table-cell"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></div>
           </div>
-          <a href="#" class="btn contacts__write">Напишите нам</a>
+          <div class="contacts__table-row">
+            <div class="contacts__table-cell">адрес:</div>
+            <div class="contacts__table-cell">
+              <address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+            </div>
+          </div>
         </div>
+        <div class="contacts__map">
+          <img width="320" height="457" alt="">
+        </div>
+        <a href="#" class="btn contacts__write">Напишите нам</a>
       </div>
     </section>
   </main>
