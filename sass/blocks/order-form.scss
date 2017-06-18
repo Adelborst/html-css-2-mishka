@@ -1,19 +1,32 @@
 .order-form {
   // @include layout-centered();
+  padding-top: 27px;
   padding-bottom: 55px;
-
+  @media #{$tablet-condition} {
+    padding-top: 78px;
+    padding-bottom: 50px;
+  }
+  @media #{$desktop-condition} {
+    padding-top: 125px;
+    padding-bottom: 50px;
+  }
 }
 
-.order-form__outer {
-  @include layout-centered();
-}
-
-.order-form__inner {
-  @include padder();
-}
-
+// .order-form__outer {
+//   @include layout-centered();
+// }
+// .order-form__inner {
+//   @include padder();
+// }
 .order-form__lead {
   margin: 0;
   font-size: 13px;
   line-height: 24px;
+  margin-bottom: 12px;
+  @media #{$desktop-condition} {
+    // width: 700px;
+    // box-sizing: border-box;
+    padding-left: 175px;
+    padding-right: 175px;
+  }
 }
