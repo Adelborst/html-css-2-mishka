@@ -1,0 +1,12 @@
+.catalog-page__body {
+  padding-top: 30px;
+  padding-bottom: 58px;
+  @media #{$tablet-condition} {
+    padding-top: 78px;
+    padding-bottom: 63px;
+  }
+  @media #{$desktop-condition} {
+    padding-top: 128px;
+    padding-bottom: 105px;
+  }
+}

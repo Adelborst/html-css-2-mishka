@@ -1,8 +1,8 @@
 .page-header2 {
-  height: 568px;
-  @media #{$tablet-condition} {
-    height: 834px;
-  }
+  // height: 568px;
+  // @media #{$tablet-condition} {
+  //   height: 834px;
+  // }
   background-color: $page-header-bg-color;
   &--bg-toys {
     background-color: $page-header-bg-color;
@@ -18,14 +18,21 @@
 .page-header2__heading {
   @include container();
   h2 {
-    text-align: center;
-    box-sizing: border-box;
     margin: 0;
-    padding-top: 75px;
-    height: 282px;
+    height: 178px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // @media #{$tablet-condition} {
+    //   padding-top: 162px;
+    //   height: 625px;
+    // }
     @media #{$tablet-condition} {
-      padding-top: 162px;
-      height: 625px;
+      height: 225px;
+    }
+    @media #{$desktop-condition} {
+      height: 255px;
     }
   }
 }

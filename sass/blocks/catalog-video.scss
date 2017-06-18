@@ -12,3 +12,7 @@
 .catalog-video__inner {
   @include padder();
 }
+
+.catalog-video__wrapper {
+  @include container();
+}
