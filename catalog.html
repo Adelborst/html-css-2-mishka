@@ -10,27 +10,35 @@
 </head>
 
 <body class="page">
-  <header class="page-header">
-    <div class="page-header__outer">
-      <h1 class="page-header__title">Мишка</h1>
-      <nav class="main-nav">
-        <div class="main-nav__logo">
-          <a href="index.html"><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
-          <input type="checkbox" class="main-nav__toggle">
+  <header class="page-header2">
+    <section class="page-header2__nav">
+      <div class="container">
+        <div class="top-nav">
+          <div class="top-nav__container">
+            <div class="top-nav__logo">
+              <a><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
+            </div>
+            <button type="button" class="top-nav__toggle">X</button>
+            <ul class="top-nav__primary-list">
+              <li class="top-nav__primary-item"><a href="catalog.html">Каталог товаров</a></li>
+              <li class="top-nav__primary-item"><a href="form.html">Вязание на заказ</a></li>
+            </ul>
+            <div class="top-nav__search-and-cart">
+              <div class="top-nav__search"><a href="#">Поиск по сайту</a></div>
+              <div class="top-nav__cart"><a href="#">Корзина: пока пуста</a></div>
+            </div>
+            <ul class="top-nav__deals-list">
+              <li class="top-nav__deals-item"><a href="#">Новые поступления</a></li>
+              <li class="top-nav__deals-item"><a href="#">Распродажа</a></li>
+            </ul>
+            <div class="top-nav__delivery">Бесплатная доставка по России</div>
+          </div>
         </div>
-        <div class="main-nav__primary-list-wrapper">
-          <ul class="main-nav__primary-list">
-            <li class="main-nav__primary-item"><a>Каталог товаров</a></li>
-            <li class="main-nav__primary-item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__primary-item main-nav__primary-item--search"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__primary-item main-nav__primary-item--cart"><a href="#">Корзина: пока пуста</a></li>
-          </ul>
-        </div>
-      </nav>
-      <section class="hero-unit">
-        <h2 class="page-header__heading">Каталог товаров</h2>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="page-header2__heading">
+        <h2>Каталог товаров</h2>
+    </section>
   </header>
   <main class="page-body">
     <section class="catalog">
@@ -99,17 +107,17 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__outer page-footer__inner page-footer__container">
-      <div class="footer-logo">
+      <div class="page-footer__item footer-logo">
         <a><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
       </div>
-      <section class="social">
+      <section class="page-footer__item social">
         <ul class="social__list">
           <li class="social__item social__item--in"><a href="#">Instagram</a></li>
           <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
           <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
         </ul>
       </section>
-      <section class="copyright">
+      <section class="page-footer__item copyright">
         <a href="http://htmlacademy.ru" class="copyright__developer">Разработано</a>
       </section>
     </div>

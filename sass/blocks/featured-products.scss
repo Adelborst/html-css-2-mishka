@@ -4,11 +4,7 @@
 
 }
 
-.featured-products__outer {
-  @include layout-centered();
-}
-
-.featured-products__inner {
-  @include padder();
+.featured-products__wrapper {
+  @include container();
 }
 

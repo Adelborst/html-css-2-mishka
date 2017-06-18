@@ -1,7 +1,11 @@
-.our-advantages__container {
+.our-advantages {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.our-advantages__heading {
+  flex-basis: 100%;
 }
 
 .our-advantages__list {
@@ -13,6 +17,10 @@
 @media #{$tablet-condition} {
   .our-advantages__list {
     flex-basis: 50%;
+  }
+
+  .our-advantages__item {
+    width: 250px;
   }
 }
 

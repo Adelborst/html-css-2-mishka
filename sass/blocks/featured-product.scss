@@ -3,6 +3,16 @@
   // flex-direction: column;
 }
 
+.featured-product__content {
+  @media #{$mobile-condition} {}
+  @media #{$tablet-condition} {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  @media #{$desktop-condition} {}
+}
+
 .featured-product__name {
   margin-top: 0;
   @include heading();
