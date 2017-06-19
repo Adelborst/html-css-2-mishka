@@ -1,0 +1,33 @@
+.our-advantages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.our-advantages__heading {
+  flex-basis: 100%;
+}
+
+.our-advantages__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media #{$tablet-condition} {
+  .our-advantages__list {
+    flex-basis: 50%;
+  }
+
+  .our-advantages__item {
+    width: 250px;
+  }
+}
+
+@media #{$desktop-condition} {
+  .our-advantages {
+    @include desktop-pad-horizontal();
+  }
+}
+
+@media #{$mobile-condition} {}

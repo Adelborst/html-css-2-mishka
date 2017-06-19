@@ -1,4 +1,39 @@
 .page-footer {
-  @include centerer();
-  background-color: #f1f1f1;
+  background-color: $gray-light-color;
 }
+
+.page-footer__outer {
+  @include layout-centered();
+}
+
+.page-footer__inner {
+  @include padder();
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @media #{$tablet-condition} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__item {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media #{$mobile-condition} {
+  .footer-logo {
+    display: none;
+  }
+}
+
+@media #{$tablet-condition} {}
+
+@media #{$desktop-condition} {}

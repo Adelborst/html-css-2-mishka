@@ -2,29 +2,48 @@
 @import "mixins";
 @import "mixins-fonts";
 @import "global/layout";
+@import "blocks/container";
 
+@import "blocks/top-nav";
+@import "blocks/top-nav.order";
 @import "blocks/page-header";
+@import "blocks/page-header2";
 @import "blocks/main-nav";
+@import "blocks/main-nav__order";
 @import "blocks/btn";
 @import "blocks/hero-unit";
+
+@import "blocks/page";
 
 @import "blocks/page-footer";
 
 @import "blocks/contacts";
+@import "blocks/contacts.flex";
 
 @import "blocks/categories";
 
+@import "blocks/featured-products";
 @import "blocks/featured-product";
+@import "blocks/featured-product__flex";
 
-@import "blocks/features";
-
+@import "blocks/about-us";
+@import "blocks/our-advantages";
+@import "blocks/our-advantages.flex";
 @import "blocks/reviews";
+@import "blocks/reviews.flex";
 
 @import "blocks/copyright";
 
 @import "blocks/catalog";
 @import "blocks/catalog-product";
 @import "blocks/catalog-video";
+@import "blocks/video-container";
+@import "blocks/video-container.flex";
 
 @import "blocks/order-form";
 @import "blocks/form-group";
+@import "blocks/radio-list";
+@import "blocks/checkbox-list";
+
+@import "blocks/social";
+@import "blocks/catalog-page";

@@ -1,0 +1,14 @@
+@media #{$desktop-condition} {
+  .contacts__heading {
+    order: -10;
+  }
+  .contacts__table {
+    order: -9;
+  }
+  .contacts__write {
+    order: -8;
+  }
+  .contacts__map {
+    order: -7;
+  }
+}

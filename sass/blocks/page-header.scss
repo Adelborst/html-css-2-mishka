@@ -1,5 +1,146 @@
+.page-header {
+  min-height: 570px; // min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media #{$tablet-condition} {
+    min-height: 835px;
+  }
+  @media #{$desktop-condition} {
+    min-height: 835px;
+  }
+  &--toys-bg {
+    background-color: $page-header-bg-color;
+    background-image: url("/img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 490px;
+  }
+}
+
+.page-header__main-nav {
+  background-color: green;
+}
+
+.page-header__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 100px;
+  @include padder();
+  @media #{$tablet-condition} {
+    padding-top: 155px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+  @media #{$desktop-condition} {
+    padding-top: 160px;
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+
+.page-header__outer {
+  @include layout-centered();
+}
+
+.page-header__inner {
+  @include padder();
+}
+
 .page-header__title {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
+
+.page-header {
+  // outline: 1px dashed black;
+}
+
+// .page-header > *:not(.main-nav__logo) {
+//   display: none;
+// }
+// @media #{$mobile-condition} {
+//   .main-nav__primary-item,
+//   .search,
+//   .cart {
+//     min-height: 80px;
+//   }
+//   .main-nav__primary-item a,
+//   .search a,
+//   .cart a {
+//     display: block;
+//     font-size: 17px;
+//     min-height: 80px;
+//     text-align: center;
+//     // TODO: Центрировать по вертикали
+//   }
+//   .main-nav__deals-list,
+//   .delivery {
+//     display: none;
+//   }
+//   .main-nav__toggle {
+//     display: block;
+//   }
+//   .wrapper {
+//     position: absolute;
+//     width: 100%;
+//   }
+//   .main-nav__primary-list,
+//   .search,
+//   .cart {
+//     background-color: #ffffff;
+//   }
+//   .main-nav__toggle {
+//     &:not(:checked) ~ .wrapper {
+//       .main-nav__primary-list,
+//       .search,
+//       .cart {
+//         display: none;
+//       }
+//     }
+//     &:checked ~ .wrapper {
+//       .main-nav__primary-list,
+//       .search,
+//       .cart {
+//         display: block;
+//       }
+//     }
+//   }
+// }
+// @media #{$tablet-condition} {
+//   .page-header {
+//     display: flex;
+//   }
+//   .main-nav__logo {
+//     order: -10;
+//   }
+//   .search {
+//     order: -9;
+//   }
+//   .cart {
+//     order: -8;
+//     width: 265px;
+//     box-sizing: border-box;
+//   }
+//   .wrapper {
+//     order: 2;
+//   }
+//   // .main-nav__toggle {
+//   //   display: none;
+//   // }
+//   // .wrapper {
+//   //   position: initial;
+//   //   width: auto;
+//   // }
+//   // .search,
+//   // .cart {
+//   //   display: block;
+//   // }
+// }

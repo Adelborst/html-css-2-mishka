@@ -1,0 +1,143 @@
+.top-nav {
+  position: relative;
+  height: 80px;
+  @media #{$tablet-condition} {
+    height: 88px;
+  }
+}
+
+.top-nav__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.top-nav__logo {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-nav__toggle {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 30px;
+}
+
+.top-nav__primary-list,
+.top-nav__deals-list {
+  @include reset-list();
+}
+
+.top-nav__primary-list,
+.top-nav__search-and-cart,
+.top-nav__deals-list,
+.top-nav__delivery {
+  display: none;
+  a {
+    display: block;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    @media #{$tablet-condition} {
+      padding-left: 0;
+    }
+  }
+}
+
+.top-nav__primary-list,
+.top-nav__search-and-cart {
+  // display: initial;
+}
+
+@media #{$tablet-condition} {
+  .top-nav {
+    position: static;
+  }
+  .top-nav__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-nav__logo {
+    justify-content: flex-start;
+    flex-basis: (100 / 3) + 0%;
+  }
+  .top-nav__search-and-cart,
+  .top-nav__primary-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .top-nav__search a {
+    width: 82px;
+    height: 88px;
+    font-size: 0;
+  }
+  .top-nav__cart a {
+    width: 264px - 82px;
+    height: 88px;
+    padding-left: 82px;
+  }
+  .top-nav__primary-item a {
+    width: 167px - 20px; // padding-top: 22px;
+    padding-right: 20px;
+    height: 88px;
+  }
+  .top-nav__delivery {
+    display: initial;
+  }
+  .top-nav__toggle {
+    display: none;
+  }
+}
+
+@media #{$desktop-condition} {
+  .top-nav__deals-list {
+    display: flex;
+  }
+  .top-nav__primary-item {
+    a {
+      width: auto;
+    }
+    &:not(:last-of-type) {
+      a {
+        width: 183px - 20px; // padding-top: 22px;
+        padding-right: 20px;
+        height: 88px;
+        border-right: 1px solid gray;
+      }
+    }
+    &:not(:first-of-type) {
+      a {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+    }
+  }
+  .top-nav__logo {
+    justify-content: flex-start;
+    flex-basis: auto;
+  }
+  .top-nav__deals-item {
+    a {
+      height: 88px;
+    }
+    &:not(:last-of-type) {
+      a {
+        width: 184px - 20px; // padding-top: 22px;
+        padding-right: 20px;
+      }
+    }
+    &:not(:first-of-type) {
+      a {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+    }
+  }
+}

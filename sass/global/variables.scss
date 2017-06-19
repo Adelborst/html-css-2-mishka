@@ -1,6 +1,13 @@
+$mobile-condition: "(max-width: 767px)";
+$tablet-condition: "(min-width: 768px)";
+$desktop-condition: "(min-width: 1150px)";
+
 $gray-color: #444444;
+$gray-light-color: #f1f1f1;
 $black-color: #000000;
 $white-color: #ffffff;
+$page-header-bg-color: #f9f9f9;
+$product-image-bg-color: #e6e7e9;
 
 $primary-text-color: $gray-color;
 $secondary-text-color: $black-color;
@@ -17,3 +24,6 @@ $font-size-lg: 15px;
 
 $promo-color-primary: #63d1bb;
 $promo-color-secondary: #56c3b2;
+
+$mobile-menu-display: none;
+// $mobile-menu-display: initial;

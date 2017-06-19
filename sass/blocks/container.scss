@@ -1,0 +1,13 @@
+.container {
+  width: 260px;
+  padding: 0 30px;
+  margin: 0 auto;
+  @media #{$tablet-condition} {
+    width: 670px;
+    padding: 0 50px;
+  }
+  @media #{$desktop-condition} {
+    width: 1050px;
+    padding: 0 50px;
+  }
+}

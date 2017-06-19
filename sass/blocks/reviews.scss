@@ -1,9 +1,40 @@
 .reviews {
-  @include centerer();
+  padding-top: 65px;
   padding-bottom: 50px;
 }
 
+.reviews__text {
+  margin: 0;
+  padding: 0;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  font-weight: bold;
+  color: $secondary-text-color;
+  font-style: normal;
+}
+
+.reviews__author-username {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.reviews__outer {
+  @include layout-centered();
+}
+
 .reviews__heading {
+  margin-top: 0;
   @include heading();
   margin-bottom: 30px;
 }

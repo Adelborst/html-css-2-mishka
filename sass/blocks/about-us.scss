@@ -1,0 +1,13 @@
+.about-us {
+  // @include layout-centered();
+  padding-top: 35px;
+
+}
+
+.about-us__outer {
+  @include layout-centered();
+}
+
+.about-us__inner {
+  @include padder();
+}

@@ -1,0 +1,18 @@
+.checkbox-list {
+  @include reset-list();
+  display: flex;
+  flex-direction: column;
+  @media #{$tablet-condition} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.checkbox-list__item {
+  @media #{$tablet-condition} {
+    flex-basis: 50%;
+  }
+  @media #{$desktop-condition} {
+    flex-basis: (100% / 3);
+  }
+}

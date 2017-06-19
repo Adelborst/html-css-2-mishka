@@ -1,7 +1,36 @@
 .catalog {
-  padding-top: 30px;
+  // padding-top: 30px;
 }
 
-.catalog__item {
+.catalog__outer {
+  @include layout-centered();
+}
+
+.catalog__inner {
+  @include padder();
+}
+
+.catalog__wrapper {
+  @include container();
+}
+
+.catalog__list {
+  @include reset-list();
+  display: flex;
+  flex-direction: column;
+  @media #{$desktop-condition} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.catalog__item:not(:last-of-type) {
   margin-bottom: 30px;
+  @media #{$tablet-condition} {
+    margin-bottom: 55px;
+  }
+  @media #{$desktop-condition} {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
 }
