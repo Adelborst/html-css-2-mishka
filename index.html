@@ -18,14 +18,14 @@
             <div class="top-nav__logo">
               <a><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
             </div>
-            <button type="button" class="top-nav__toggle">X</button>
+            <button type="button" class="top-nav__toggle">Меню</button>
             <ul class="top-nav__primary-list">
-              <li class="top-nav__primary-item"><a href="catalog.html">Каталог товаров</a></li>
-              <li class="top-nav__primary-item"><a href="form.html">Вязание на заказ</a></li>
+              <li class="top-nav__primary-item top-nav__menu-item"><a href="catalog.html">Каталог товаров</a></li>
+              <li class="top-nav__primary-item top-nav__menu-item"><a href="form.html">Вязание на заказ</a></li>
             </ul>
             <div class="top-nav__search-and-cart">
-              <div class="top-nav__search"><a href="#">Поиск по сайту</a></div>
-              <div class="top-nav__cart"><a href="#">Корзина: пока пуста</a></div>
+              <div class="top-nav__search top-nav__menu-item"><a href="#">Поиск по сайту</a></div>
+              <div class="top-nav__cart top-nav__menu-item"><a href="#">Корзина: пока пуста</a></div>
             </div>
             <ul class="top-nav__deals-list">
               <li class="top-nav__deals-item"><a href="#">Новые поступления</a></li>
@@ -77,7 +77,7 @@
               </table>
             </div>
             <div class="featured-product__image">
-              <img src="http://placehold.it/260x315" width="260" height="315" alt="">
+              <img src="/img/triple-set-mobile@1x.jpg" width="260" height="315" alt="">
             </div>
             <div class="featured-product__buy">
               <b class="featured-product__price">Цена: 990 руб.</b>
@@ -144,14 +144,16 @@
           <div class="contacts__table-row">
             <div class="contacts__table-cell">адрес:</div>
             <div class="contacts__table-cell">
-              <address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+              <address>г. Санкт-Петербург, <br>ул. Большая Конюшенная, д. 19/8, офис 101</address>
             </div>
           </div>
         </div>
         <div class="contacts__map">
-          <img width="320" height="457" alt="">
+          <img src="/img/map-mobile@1x.jpg" width="320" height="457" alt="">
         </div>
-        <a href="#" class="btn contacts__write">Напишите нам</a>
+        <div class="container">
+          <a href="#" class="btn contacts__write">Напишите нам</a>
+        </div>
       </div>
     </section>
   </main>
@@ -168,7 +170,7 @@
         </ul>
       </section>
       <section class="page-footer__item copyright">
-        <a href="http://htmlacademy.ru" class="copyright__developer">Разработано</a>
+        <a href="http://htmlacademy.ru" class="copyright__developer">Разработано<span class="copyright__htmlacademy">HTML Academy</span></a>
       </section>
     </div>
   </footer>

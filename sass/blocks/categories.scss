@@ -12,12 +12,13 @@
   }
 }
 
-.categories a {
+.categories__item a {
+  position: relative;
   font-size: 19px;
+  line-height: 24px;
   font-weight: bold;
   color: $secondary-text-color-invert;
-  display: block;
-  // outline: 1px dashed black;
+  display: block; // outline: 1px dashed black;
   display: flex;
   align-items: center;
   @media #{$mobile-condition} {
@@ -36,9 +37,42 @@
     padding-left: 40px;
     padding-right: 25px + 350px;
   }
+  color: rgba(255,255,255,1);
+  &:active {
+    color: rgba(255,255,255,0.3);
+  }
+}
+
+.categories__item--interior a::after {
+  position: absolute;
+  content: "";
+  right: 37px;
+  top: 23px;
+  color: #3bb09d;
+  background-color: transparent;
+  background-image: url("/img/icon-interior.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 62px;
+  width: 39px;
+  fill: red;
+}
+
+.categories__item--toys a::after {
+  position: absolute;
+  content: "";
+  right: 27px;
+  top: 20px;
+  background-color: transparent;
+  background-image: url("/img/icon-toy.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 61px;
+  width: 60px;
 }
 
 .categories__item {
+  position: relative;
   flex-grow: 1;
   flex-basis: 0;
   &:nth-child(2n+1) {

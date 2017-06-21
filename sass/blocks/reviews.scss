@@ -41,4 +41,32 @@
 
 .reviews__toggle-wrapper {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reviews__toggle {
+  flex-basis: 50%;
+  background-color: transparent;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border: 1px solid #ececec;
+  height: 50px;
+  font-size: 0;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &--prev {
+    background-image: url("/img/icon-left-arrow.svg");
+    border-right: none;
+    //666666
+    //b2b2b2
+  }
+  &--next {
+    background-image: url("/img/icon-right-arrow.svg");
+  }
 }

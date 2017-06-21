@@ -50,6 +50,10 @@
 }
 
 .featured-product__promo {
+  font-size: 17px;
+  line-height: 20px;
+  color: $promo-color-primary;
+  text-transform: uppercase;
   @media #{$tablet-condition} {
     flex-basis: (100% / 4 * 1);
   }
@@ -114,12 +118,6 @@
   }
 }
 
-.featured-product__promo {
-  font-size: 17px;
-  line-height: 20px;
-  color: $promo-color-primary;
-}
-
 .featured-product__price {
   display: block;
   font-size: 17px; // min-height: 75px;
@@ -141,8 +139,18 @@
 }
 
 .featured-product__characteristics {
+  width: 100%;
   font-size: 15px;
   line-height: 20px;
+  border-collapse: collapse;
+  td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+    &:first-of-type {
+      width: 90px;
+    }
+  }
 }
 
 .featured-product__buy {

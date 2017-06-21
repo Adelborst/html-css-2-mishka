@@ -1,7 +1,7 @@
 .about-us {
   // @include layout-centered();
   padding-top: 35px;
-
+  @include zigzag();
 }
 
 .about-us__outer {
