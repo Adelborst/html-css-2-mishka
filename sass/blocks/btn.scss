@@ -1,6 +1,36 @@
 .btn {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 2;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: $base-font-family;
   font-size: 17px;
   line-height: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
+  // letter-spacing: 4px;
+  color: $gray-color;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid $gray-color;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  // TODO: to reconsider
+  width: 100%;
+}
+
+.btn:hover,
+.btn.hover {
+  color: rgba(255,255,255,1);
+  background-color: rgba(68,68,68,1);
+}
+
+.btn:active,
+.btn.active {
+  outline: none;
+  color: rgba(255,255,255,0.3);
+  // background-color: rgba(68,68,68,1);
 }

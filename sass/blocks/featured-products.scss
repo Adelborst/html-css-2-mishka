@@ -10,6 +10,7 @@
     padding-top: 71px;
     padding-bottom: 96px;
   }
+  @include zigzag();
 }
 
 .featured-products__wrapper {

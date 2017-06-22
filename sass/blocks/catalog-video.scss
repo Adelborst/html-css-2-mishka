@@ -1,9 +1,12 @@
 .catalog-video {
   // @include layout-centered();
   // margin-bottom: 30px;
-
+  padding-top: 30px;
+  @media #{$tablet-condition} {
+    padding-top: 53px;
+  }
+  @media #{$desktop-condition} {}
 }
-
 
 .catalog-video__outer {
   @include layout-centered();

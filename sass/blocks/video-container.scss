@@ -8,6 +8,7 @@
   @media #{$desktop-condition} {
     flex-wrap: wrap-reverse;
   }
+  border: 1px solid #ececec;
 }
 
 .video-container__heading {
@@ -17,15 +18,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 17px;
+  font-weight: bold;
+  font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   color: $secondary-text-color;
   min-height: 95px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 32px;
+    height: 22px;
+    left: 35px;
+    top: 35px;
+    @media #{$tablet-condition} {
+      left: 40px;
+      top: 38px;
+    }
+    @media #{$desktop-condition} {
+      left: 80px;
+      top: 47px;
+    }
+  }
   @media #{$tablet-condition} {
-    min-height: 102px;
+    // min-height: 102px;
+    min-height: auto;
+    padding-top: 40px;
     padding-left: 40px + 65px;
+    margin-bottom: 40px;
     justify-content: flex-start;
+    font-size: 20px;
   }
   @media #{$desktop-condition} {
     padding-top: 95px;
@@ -40,9 +66,14 @@
 }
 
 .video-container__content {
+  video {
+    display: block;
+  }
+  cursor: pointer;
   background-color: $gray-light-color;
   width: 260px;
   height: 150px;
+  margin-left: -1px;
   @media #{$tablet-condition} {
     width: auto;
     height: 455px;
@@ -51,6 +82,18 @@
     width: 682px;
     height: 455px; // padding-left: 80px;
   }
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100px;
+    height: 78px;
+    top: calc(50% - 78px / 2);
+    left: calc(50% - 100px / 2);
+  }
 }
 
 .video-container__description {
@@ -58,6 +101,8 @@
   padding: 35px;
   @media #{$tablet-condition} {
     padding: 0 40px 45px 40px;
+    font-size: 15px;
+    line-height: 30px;
   }
   @media #{$desktop-condition} {
     box-sizing: border-box;
@@ -74,6 +119,9 @@
   p {
     margin-top: 0;
     margin-bottom: 35px;
+    @media #{$tablet-condition} {
+      margin-bottom: 40px;
+    }
     @media #{$desktop-condition} {
       margin-bottom: 50px;
     }

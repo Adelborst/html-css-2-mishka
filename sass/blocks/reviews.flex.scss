@@ -1,16 +1,4 @@
-.reviews {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 @media #{$tablet-condition} {
-  .reviews {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .reviews__heading {
-  }
   .reviews__heading {
     order: -10;
     // flex-basis: (3/4) * 100%;
@@ -32,10 +20,10 @@
   }
 }
 
-@media #{$desktop-condition} {
-  .reviews {
-    @include desktop-pad-left();
-  }
-}
+// @media #{$desktop-condition} {
+//   .reviews {
+//     @include desktop-pad-left();
+//   }
+// }
 
 @media #{$mobile-condition} {}

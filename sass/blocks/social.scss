@@ -4,9 +4,40 @@
 
 .social__list {
   @include reset-list();
-  text-align: center;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-around;
 }
 
 .social__item {
   display: inline-block;
+  vertical-align: baseline;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+  a {
+    display: block;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    font-size: 0;
+  }
+  &--in a {
+    width: 22px;
+    height: 21px;
+    background-image: url("/img/icon-insta.svg");
+  }
+  &--fb a {
+    width: 15px;
+    height: 29px;
+    background-image: url("/img/icon-fb.svg");
+    background-position: 0 0;
+  }
+  &--tw a {
+    width: 24px;
+    height: 20px;
+    background-image: url("/img/icon-twitter.svg");
+  }
 }

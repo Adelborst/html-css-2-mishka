@@ -1,6 +1,31 @@
 .reviews {
   padding-top: 65px;
   padding-bottom: 50px;
+  @include layout-centered();
+}
+
+.reviews__container {
+  @include padder();
+  // @include container();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @media #{$tablet-condition} {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    min-height: 457px - 35px;
+    padding-top: 35px;
+  }
+  @media #{$tablet-condition} {
+    background-image: url("/img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  @media #{$desktop-condition} {
+    padding-left: 50px + 175px;
+    background-position-x: 50px;
+  }
 }
 
 .reviews__text {
@@ -13,13 +38,22 @@
   font-size: 15px;
   line-height: 30px;
   margin-bottom: 35px;
+  @media #{$tablet-condition} {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 65px;
+  }
 }
 
 .reviews__author-name {
   font-size: 17px;
+  line-height: 24px;
   font-weight: bold;
   color: $secondary-text-color;
   font-style: normal;
+  @media #{$tablet-condition} {
+    font-size: 18px;
+  }
 }
 
 .reviews__author-username {
@@ -37,8 +71,53 @@
   margin-top: 0;
   @include heading();
   margin-bottom: 30px;
+  @media #{$tablet-condition} {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.reviews__write {
+  @media #{$tablet-condition} {
+    width: 175px;
+  }
 }
 
 .reviews__toggle-wrapper {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media #{$tablet-condition} {
+    margin-bottom: 0;
+    width: 167px;
+  }
+}
+
+.reviews__toggle {
+  flex-basis: 50%;
+  background-color: transparent;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border: 1px solid #ececec;
+  height: 50px;
+  font-size: 0;
+  @media #{$tablet-condition} {
+    border: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &--prev {
+    background-image: url("/img/icon-left-arrow.svg");
+    border-right: none; //666666
+    //b2b2b2
+  }
+  &--next {
+    background-image: url("/img/icon-right-arrow.svg");
+  }
 }

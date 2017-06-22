@@ -1,10 +1,29 @@
-.copyright__developer {
-  font-size: 19px;
-  line-height: 18px;
-  color: $secondary-text-color;
-}
-
 .copyright {
   // padding-left: 40px;
   // padding-right: 40px;
+  @media #{$tablet-condition} {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.copyright__developer {
+  font-size: 19px;
+  line-height: 34px;
+  color: $secondary-text-color;
+  @media #{$tablet-condition} {
+    // line-height:
+  }
+}
+
+.copyright__htmlacademy {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  width: 27px;
+  height: 34px;
+  margin-left: 30px;
+  margin-top: 2px;
+  background-image: url("/img/logo-htmlacademy.svg");
 }

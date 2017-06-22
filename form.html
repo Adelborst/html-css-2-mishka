@@ -18,14 +18,14 @@
             <div class="top-nav__logo">
               <a><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
             </div>
-            <button type="button" class="top-nav__toggle">X</button>
+            <button type="button" class="top-nav__toggle">Меню</button>
             <ul class="top-nav__primary-list">
-              <li class="top-nav__primary-item"><a href="catalog.html">Каталог товаров</a></li>
-              <li class="top-nav__primary-item"><a href="form.html">Вязание на заказ</a></li>
+              <li class="top-nav__primary-item top-nav__menu-item"><a href="catalog.html">Каталог товаров</a></li>
+              <li class="top-nav__primary-item top-nav__menu-item"><a href="form.html">Вязание на заказ</a></li>
             </ul>
             <div class="top-nav__search-and-cart">
-              <div class="top-nav__search"><a href="#">Поиск по сайту</a></div>
-              <div class="top-nav__cart"><a href="#">Корзина: пока пуста</a></div>
+              <div class="top-nav__search top-nav__menu-item"><a href="#">Поиск по сайту</a></div>
+              <div class="top-nav__cart top-nav__menu-item"><a href="#">Корзина: пока пуста</a></div>
             </div>
             <ul class="top-nav__deals-list">
               <li class="top-nav__deals-item"><a href="#">Новые поступления</a></li>
@@ -37,7 +37,7 @@
       </div>
     </section>
     <section class="page-header2__heading">
-      <h2>Вязание на заказ</h2>
+      Вязание на заказ
     </section>
   </header>
   <main class="page-body order-form">
@@ -53,10 +53,12 @@
             <div class="form-group__name form-group__item">Тип</div>
             <div class="radio-list form-group__item">
               <div class="radio-list__item">
-                <label class="radio form-group__label"><input type="radio" name="category" value="interior" id="interior" checked>Аксессуар для интерьера</label>
+                <input class="radio" type="radio" name="category" value="interior" id="interior" checked><label class="radio form-group__label"
+                  for="interior">Аксессуар для интерьера</label>
               </div>
               <div class="radio-list__item">
-                <label class="radio form-group__label"><input type="radio" name="category" value="toy" id="toy">Детская игрушка</label>
+                <input class="radio" type="radio" name="category" value="toy" id="toy"><label class="radio form-group__label"
+                  for="toy">Детская игрушка</label>
               </div>
             </div>
           </div>
@@ -68,22 +70,26 @@
             <div class="form-group__name form-group__item">Цвет</div>
             <ul class="checkbox-list form-group__item">
               <li class="checkbox-list__item">
-                <label class="checkbox form-group__label"><input type="checkbox" name="color" value="white" id="white" checked> Белый</label>
+                <input type="checkbox" name="color" value="white" id="white" checked><label class="checkbox form-group__label"
+                  for="white">Белый</label>
               </li>
               <li class="checkbox-list__item">
-                <label class="checkbox form-group__label"><input type="checkbox" name="color" value="gray" id="gray" checked>Серый</label>
+                <input type="checkbox" name="color" value="gray" id="gray" checked><label class="checkbox form-group__label"
+                  for="gray">Серый</label>
               </li>
               <li class="checkbox-list__item">
-                <label class="checkbox form-group__label"><input type="checkbox" name="color" value="tiffany" id="tiffany">«Тиффани»</label>
+                <input type="checkbox" name="color" value="tiffany" id="tiffany"><label class="checkbox form-group__label"
+                  for="tiffany">«Тиффани»</label>
               </li>
               <li class="checkbox-list__item">
-                <label class="checkbox form-group__label"><input type="checkbox" name="color" value="black" id="black">Черный</label>
+                <input type="checkbox" name="color" value="black" id="black"><label class="checkbox form-group__label" for="black">Черный</label>
               </li>
               <li class="checkbox-list__item">
-                <label class="checkbox form-group__label"><input type="checkbox" name="color" value="pink" id="pink">Розовый</label>
+                <input type="checkbox" name="color" value="pink" id="pink"><label class="checkbox form-group__label" for="pink">Розовый</label>
               </li>
               <li class="checkbox-list__item">
-                <label class="checkbox form-group__label"><input type="checkbox" name="color" value="orange" id="orange">Оранжевый</label>
+                <input type="checkbox" name="color" value="orange" id="orange"><label class="checkbox form-group__label"
+                  for="orange">Оранжевый</label>
               </li>
             </ul>
           </div>
@@ -95,16 +101,16 @@
             <div class="form-group__name form-group__item">ФИО</div>
             <div class="form-group__group form-group__item">
               <section class="form-field">
-                <label class="form-group__label">Имя:</label>
-                <input type="text" name="first-name" placeholder="Введите ваше имя*">
+                <label class="form-group__label" for="first-name">Имя:</label>
+                <input class="text-field" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*">
               </section>
               <section class="form-field">
-                <label class="form-group__label">Фамилия:</label>
-                <input type="text" name="last-name" placeholder="Укажите фамилию*">
+                <label class="form-group__label" for="last-name">Фамилия:</label>
+                <input class="text-field" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*">
               </section>
               <section class="form-field">
-                <label class="form-group__label">Отчество:</label>
-                <input type="text" name="middle-name" placeholder="Отчество, если желаете">
+                <label class="form-group__label" for="middle-name">Отчество:</label>
+                <input class="text-field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
               </section>
             </div>
           </div>
@@ -115,14 +121,14 @@
         <div class="container">
           <div class="form-group">
             <div class="form-group__name form-group__item">Тел</div>
-            <section class="form-field form-field--tel form-group__item">
-              <input type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+            <section class="form-field form-group__item">
+              <input class="text-field text-field--tel" type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
             </section>
           </div>
           <div class="form-group">
             <div class="form-group__name form-group__item">E-mail</div>
-            <section class="form-field form-field--email form-group__item">
-              <input type="text" name="email" placeholder="Ваш Email*">
+            <section class="form-field form-group__item">
+              <input class="text-field text-field--email" type="text" name="email" placeholder="Ваш Email*">
             </section>
           </div>
         </div>
@@ -130,10 +136,10 @@
 
       <div class="form-section">
         <div class="container">
-          <div class="form-group">
+          <div class="form-group form-group--comment">
             <div class="form-group__name form-group__item">Доп</div>
             <div class="form-group__item">
-              <textarea name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="text-field" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
         </div>
@@ -149,20 +155,22 @@
     </form>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__outer page-footer__inner page-footer__container">
-      <div class="page-footer__item footer-logo">
-        <a><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
+    <div class="container">
+      <div class="page-footer__container">
+        <div class="page-footer__item footer-logo">
+          <a><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
+        </div>
+        <section class="page-footer__item social">
+          <ul class="social__list">
+            <li class="social__item social__item--in"><a href="#">Instagram</a></li>
+            <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
+            <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
+          </ul>
+        </section>
+        <section class="page-footer__item copyright">
+          <a href="http://htmlacademy.ru" class="copyright__developer">Разработано<span class="copyright__htmlacademy">HTML Academy</span></a>
+        </section>
       </div>
-      <section class="page-footer__item social">
-        <ul class="social__list">
-          <li class="social__item social__item--in"><a href="#">Instagram</a></li>
-          <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
-          <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
-        </ul>
-      </section>
-      <section class="page-footer__item copyright">
-        <a href="http://htmlacademy.ru" class="copyright__developer">Разработано</a>
-      </section>
     </div>
   </footer>
 </body>
