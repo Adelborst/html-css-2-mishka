@@ -39,6 +39,10 @@
       left: 40px;
       top: 38px;
     }
+    @media #{$desktop-condition} {
+      left: 80px;
+      top: 47px;
+    }
   }
   @media #{$tablet-condition} {
     // min-height: 102px;

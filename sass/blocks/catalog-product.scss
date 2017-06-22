@@ -26,7 +26,7 @@
 }
 
 .catalog-product__image {
-  min-height: 195px;
+  // min-height: 195px;
   img {
     display: block;
     margin-left: -1px;
@@ -41,23 +41,7 @@
   }
   @media #{$desktop-condition} {
     width: 316px;
-    // height: 462px;
-  }
-}
-
-.catalog-product__name {
-  font-size: 17px;
-  color: $secondary-text-color;
-  line-height: 24px;
-  font-weight: bold;
-  margin: 0;
-  margin-bottom: 15px;
-  @media #{$tablet-condition} {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 12px;
-  }
-  @media #{$desktop-condition} {
+    min-height: 462px;
   }
 }
 
@@ -70,29 +54,51 @@
   justify-content: space-between;
 }
 
+.catalog-product__details {
+  box-sizing: border-box;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
+  padding-top: 25px;
+  padding-bottom: 17px;
+  // height: auto;
+  min-height: 104px;
+  @media #{$tablet-condition} {
+    // min-height: auto;
+    padding-top: 25px;
+  }
+  @media #{$desktop-condition} {
+    padding-top: 27px;
+    // min-height: 123px;
+    min-height: 123px;
+    padding-bottom: 8px;
+  }
+}
+
+.catalog-product__name {
+  font-size: 17px;
+  color: $secondary-text-color;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 4px;
+  @media #{$tablet-condition} {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+  @media #{$desktop-condition} {
+
+  }
+}
+
 .catalog-product__characteristics {
   margin: 0;
   font-size: 13px;
   line-height: 30px;
   color: $primary-text-color;
   @media #{$tablet-condition} {
-  font-size: 15px;
-  }
-}
-
-.catalog-product__details {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding-top: 30px;
-  padding-bottom: 25px;
-  // min-height: 105px;
-  height: auto;
-  @media #{$tablet-condition} {
-    padding-top: 25px;
-  }
-  @media #{$desktop-condition} {
-    // height: 123px;
+    font-size: 15px;
   }
 }
 
@@ -111,6 +117,10 @@
   line-height: 24px;
   font-weight: bold;
   color: $secondary-text-color;
+  @media #{$tablet-condition} {
+    font-size: 17px;
+  }
+  @media #{$desktop-condition} {}
 }
 
 .catalog-product__add-to-cart {
