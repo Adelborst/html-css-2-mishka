@@ -10,7 +10,7 @@
 </head>
 
 <body class="page">
-  <header class="page-header2 page-header2--bg-toys">
+  <header class="page-header2 page-header2">
     <section class="page-header2__nav">
       <div class="container">
         <div class="top-nav">
@@ -36,7 +36,7 @@
         </div>
       </div>
     </section>
-    <section class="page-header2__heading">
+    <section class="page-header2__heading page-header2__heading--bg-toys">
       <h2>Милые штуки ручной работы для дома</h2>
     </section>
     <section class="page-header2__categories categories">
@@ -88,7 +88,7 @@
       </div>
     </section>
     <section class="about-us">
-      <div class="about-us__outer about-us__inner">
+      <div class="container">
         <section class="our-advantages">
           <h2 class="our-advantages__heading">Коротко о нас:</h2>
           <ul class="our-advantages__list">
@@ -114,7 +114,9 @@
             </li>
           </ul>
         </section>
-        <section class="reviews">
+      </div>
+      <section class="reviews">
+        <div class="reviews__container">
           <h2 class="reviews__heading">Отзывы</h2>
           <blockquote class="reviews__text">
             <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
@@ -130,13 +132,13 @@
             <button href="#" class="reviews__toggle reviews__toggle--next">Вперёд</button>
           </div>
           <a href="#" class="reviews__write btn">Написать</a>
-        </section>
-      </div>
+        </div>
+      </section>
     </section>
     <section class="contacts">
       <div class="contacts__container">
-        <h3 class="contacts__heading">Контакты</h3>
-        <div class="contacts__table">
+        <h3 class="contacts__heading contacts__container-item">Контакты</h3>
+        <div class="contacts__table contacts__container-item">
           <div class="contacts__table-row">
             <div class="contacts__table-cell">e-mail:</div>
             <div class="contacts__table-cell"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></div>
@@ -148,30 +150,30 @@
             </div>
           </div>
         </div>
-        <div class="contacts__map">
+        <div class="contacts__map contacts__container-item">
           <img src="/img/map-mobile@1x.jpg" width="320" height="457" alt="">
         </div>
-        <div class="container">
-          <a href="#" class="btn contacts__write">Напишите нам</a>
-        </div>
+        <a href="#" class="btn contacts__write contacts__container-item">Напишите нам</a>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__outer page-footer__inner page-footer__container">
-      <div class="page-footer__item footer-logo">
-        <a><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
+    <div class="container">
+      <div class="page-footer__container">
+        <div class="page-footer__item footer-logo">
+          <a><img src="/img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
+        </div>
+        <section class="page-footer__item social">
+          <ul class="social__list">
+            <li class="social__item social__item--in"><a href="#">Instagram</a></li>
+            <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
+            <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
+          </ul>
+        </section>
+        <section class="page-footer__item copyright">
+          <a href="http://htmlacademy.ru" class="copyright__developer">Разработано<span class="copyright__htmlacademy">HTML Academy</span></a>
+        </section>
       </div>
-      <section class="page-footer__item social">
-        <ul class="social__list">
-          <li class="social__item social__item--in"><a href="#">Instagram</a></li>
-          <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
-          <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
-        </ul>
-      </section>
-      <section class="page-footer__item copyright">
-        <a href="http://htmlacademy.ru" class="copyright__developer">Разработано<span class="copyright__htmlacademy">HTML Academy</span></a>
-      </section>
     </div>
   </footer>
 </body>

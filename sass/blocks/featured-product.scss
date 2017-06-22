@@ -7,7 +7,7 @@
   }
   @media #{$desktop-condition} {
     // display: initial;
-    padding-top: 60px;
+    // padding-top: 60px;
   }
   @media #{$tablet-condition} {
     // height: 404px;
@@ -24,7 +24,9 @@
   @media #{$tablet-condition} {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 59px;
+    align-items: flex-end;
+    // margin-bottom: 59px;
+    margin-bottom: 50px;
   }
   @media #{$desktop-condition} {
     flex-direction: row-reverse;
@@ -36,6 +38,8 @@
   margin: 0;
   margin-bottom: 5px;
   @media #{$tablet-condition} {
+    font-size: 43px;
+    line-height: 50px;
     margin-bottom: 0;
     flex-basis: (100% / 4 * 3);
   }
@@ -45,6 +49,7 @@
     font-size: 53px;
     line-height: 57px;
     position: relative;
+    top: 55px;
   }
   @include heading();
 }
@@ -55,10 +60,14 @@
   color: $promo-color-primary;
   text-transform: uppercase;
   @media #{$tablet-condition} {
-    flex-basis: (100% / 4 * 1);
+    text-align: center;
+    line-height: 17px;
+    flex-basis: (100% / 6);
   }
   @media #{$desktop-condition} {
+    box-sizing: border-box;
     flex-basis: 175px;
+    padding: 0 30px;
   }
 }
 
@@ -110,11 +119,19 @@
     margin-bottom: 0;
     width: 333px;
     height: 238px; // height: 404px;
+    img {
+      width: 333px;
+      height: 404px;
+    }
   }
   @media #{$desktop-condition} {
     width: 525px;
     height: 417px;
-    margin-top: -165px;
+    margin-top: -158px;
+    img {
+      width: 528px;
+      height: 637px;
+    }
   }
 }
 
@@ -124,6 +141,9 @@
   margin-bottom: 27px;
   font-size: 17px;
   text-align: center;
+  @media #{$desktop-condition} {
+    margin-bottom: 32px;
+  }
 }
 
 .featured-product__description {
@@ -131,6 +151,8 @@
   margin-bottom: 32px;
   font-size: 15px;
   @media #{$tablet-condition} {
+    font-size: 17px;
+    line-height: 30px;
     margin-bottom: 50px;
   }
   @media #{$desktop-condition} {
@@ -151,9 +173,17 @@
       width: 90px;
     }
   }
+  @media #{$tablet-condition} {
+  }
+  @media #{$desktop-condition} {
+  }
 }
 
 .featured-product__buy {
+  @media #{$tablet-condition} {
+    width: 292px;
+    margin-top: -25px;
+  }
   @media #{$desktop-condition} {
     // width: 350px;
   }

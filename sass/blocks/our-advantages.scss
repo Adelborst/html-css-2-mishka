@@ -2,6 +2,14 @@
   margin-top: 0;
   margin-bottom: 30px;
   @include heading();
+  @media #{$tablet-condition} {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media #{$desktop-condition} {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .our-advantages__list {

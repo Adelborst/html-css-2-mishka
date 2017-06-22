@@ -1,12 +1,20 @@
 .copyright {
   // padding-left: 40px;
   // padding-right: 40px;
+  @media #{$tablet-condition} {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 
 .copyright__developer {
   font-size: 19px;
   line-height: 34px;
   color: $secondary-text-color;
+  @media #{$tablet-condition} {
+    // line-height:
+  }
 }
 
 .copyright__htmlacademy {
