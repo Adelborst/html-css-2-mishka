@@ -15,9 +15,9 @@
 }
 
 .social__item {
-    &:not(:last-child) {
-      margin-right: 40px;
-    }
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
   a {
     display: block;
     background-position: 0 0;
@@ -41,8 +41,3 @@
     background-image: url("/img/icon-twitter.svg");
   }
 }
-
-
-  // background-image: url("/img/icon-");
-  // background-image: url("/img/icon-");
-  // background-image: url("/img/icon-");
