@@ -1,0 +1,107 @@
+
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  &:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+
+  &--tel {
+    background-image: url("/img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 10px;
+  }
+
+  &--email {
+    background-image: url("/img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 5px;
+  }
+}
+
+.form-field input[type="text"] {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: rgba(68, 68, 68, 1);
+  outline: none;
+  &:hover {
+    border-color: #62d1ba;
+  }
+}
+
+.form-field input[type="text"]::-webkit-input-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+}
+
+.form-field input[type="text"]:-moz-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+}
+
+.form-field input[type="text"]::-moz-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+}
+
+.form-field input[type="text"]:-ms-input-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+}
+
+.form-field input[type="text"]::-ms-input-placeholder {
+    color: rgba(68, 68, 68, 0.3);
+}
+
+.form-field input[type="text"]:placeholder-shown {
+    color: rgba(68, 68, 68, 0.3);
+}
+
+// .form-field input[type="text"]:hover::-webkit-input-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+
+// .form-field input[type="text"]:hover:-moz-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+
+// .form-field input[type="text"]:hover::-moz-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+
+// .form-field input[type="text"]:hover:-ms-input-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+
+// .form-field input[type="text"]:hover::-ms-input-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+
+// .form-field input[type="text"]:hover:placeholder-shown {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+
+// .form-field input[type="text"]:focus::-webkit-input-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+
+// .form-field input[type="text"]:focus:-moz-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+
+// .form-field input[type="text"]:focus::-moz-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+
+// .form-field input[type="text"]:focus:-ms-input-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+
+// .form-field input[type="text"]:focus::-ms-input-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+
+// .form-field input[type="text"]:focus:placeholder-shown {
+//     color: rgba(0, 0, 0, 0.6);
+// }
