@@ -8,6 +8,9 @@
     flex-direction: row;
     align-items: baseline;
   }
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-group--comment .form-group__name {
@@ -106,6 +109,7 @@
   }
   @media #{$desktop-condition} {
     padding-left: 175px;
+    padding-right: 175px;
   }
 }
 

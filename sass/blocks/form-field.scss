@@ -4,27 +4,11 @@
   &:not(:last-of-type) {
     margin-bottom: 25px;
   }
-  &--tel {
-    background-image: url("/img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 10px;
-  }
-  &--email {
-    background-image: url("/img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 5px;
-  }
   @media #{$tablet-condition} {
     flex-direction: row;
     align-items: baseline;
     &:not(:last-of-type) {
       margin-bottom: 20px;
-    }
-    &--tel {
-      background-position: 96% 10px;
-    }
-    &--email {
-      background-position: 96% 5px;
     }
   }
 }
@@ -43,9 +27,25 @@
   &:hover {
     border-color: #62d1ba;
   }
+  &--tel {
+    background-image: url("/img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 10px;
+  }
+  &--email {
+    background-image: url("/img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 5px;
+  }
   @media #{$tablet-condition} {
     font-size: 19px;
     flex-grow: 1;
+    &--tel {
+      background-position: 98% 10px;
+    }
+    &--email {
+      background-position: 98% 5px;
+    }
   }
 }
 
