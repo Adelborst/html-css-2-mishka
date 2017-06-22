@@ -135,3 +135,8 @@
 @mixin desktop-container() {
   padding-left: 175px;
 }
+
+@mixin mobile-container() {
+  padding-left: 28px;
+}
+
