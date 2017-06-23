@@ -81,9 +81,17 @@
   }
 }
 
+@media #{$mobile-condition} {
+  .top-nav--open {
+    .top-nav__primary-list,
+    .top-nav__search-and-cart {
+      display: initial;
+    }
+  }
+}
+
 .top-nav__primary-list,
 .top-nav__search-and-cart {
-  // display: initial;
   @media #{$mobile-condition} {
     background-color: white;
     z-index: 1;
