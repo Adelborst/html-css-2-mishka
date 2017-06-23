@@ -105,20 +105,28 @@
 
 .top-nav__search {
   position: relative;
-  &::before {
+  svg {
     content: "";
     position: absolute;
     width: 18px;
     height: 19px;
     top: calc(50% - 19px / 2);
     left: 2px;
-    background-image: url("../img/icon-search.svg");
+    // background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     @media #{$tablet-condition} {
       top: calc(50% - 19px / 2);
       left: calc(50% - 18px / 2);
     }
+  }
+  &:hover {
+    .icon-search {
+      fill: #63d1bb;
+    }
+  }
+  &:active {
+    opacity: 0.3;
   }
   @media #{$tablet-condition} {
     border-left: 1px solid #ececec;
@@ -127,7 +135,7 @@
 
 .top-nav__cart {
   position: relative;
-  &::before {
+  svg {
     content: "";
     position: absolute;
     width: 21px;
@@ -141,6 +149,14 @@
       top: calc(50% - 19px / 2);
       left: 30px;
     }
+  }
+  &:hover {
+    .icon-cart {
+      fill: #63d1bb;
+    }
+  }
+  &:active {
+    opacity: 0.3;
   }
   @media #{$tablet-condition} {
     border-left: 1px solid #ececec;

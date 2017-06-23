@@ -15,6 +15,16 @@
   @media #{$tablet-condition} {
     // line-height:
   }
+  &:hover {
+    opacity: 1;
+    color: initial;
+    .logo-htmlacademy {
+      fill: #46c1ae;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__htmlacademy {
