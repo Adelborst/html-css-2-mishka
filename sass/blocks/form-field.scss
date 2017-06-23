@@ -1,6 +1,27 @@
 .form-field {
   display: flex;
   flex-direction: column;
+  position: relative;
+  svg {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    @media #{$tablet-condition} {
+      right: 10px;
+    }
+    @media #{$desktop-condition} {
+      right: 185px;
+      top: 10px;
+    }
+  }
+  &:hover {
+    .icon-phone {
+      fill: #62d1ba;
+    }
+    .icon-mail {
+      fill: #62d1ba;
+    }
+  }
   &:not(:last-of-type) {
     margin-bottom: 25px;
   }
@@ -24,19 +45,20 @@
   padding-bottom: 15px;
   color: rgba(68, 68, 68, 1);
   outline: none;
+
   &:hover {
     border-color: #62d1ba;
   }
-  &--tel {
-    background-image: url("/img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 10px;
-  }
-  &--email {
-    background-image: url("/img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 100% 5px;
-  }
+  // &--tel {
+  //   background-image: url("../img/icon-phone.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 100% 10px;
+  // }
+  // &--email {
+  //   background-image: url("../img/icon-mail.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 100% 5px;
+  // }
   @media #{$tablet-condition} {
     font-size: 19px;
     flex-grow: 1;

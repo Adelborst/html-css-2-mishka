@@ -82,6 +82,12 @@
   font-weight: bold;
   margin: 0;
   margin-bottom: 4px;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
   @media #{$tablet-condition} {
     font-size: 20px;
     line-height: 24px;
@@ -127,5 +133,22 @@
   font-size: 0;
   width: 21px;
   height: 19px;
-  background-image: url("/img/icon-cart.svg")
+  // background-image: url("../img/icon-cart.svg");
+  // &:hover {
+  //   opacity: 0.6;
+  // }
+  // &:active {
+  //   opacity: 0.3;
+  // }
+  &:hover {
+    .icon-cart {
+      fill: #63d1bb;
+    }
+  }
+  &:active {
+    .icon-cart {
+      fill: #63d1bb;
+      opacity: 0.3;
+    }
+  }
 }

@@ -51,6 +51,13 @@
   }
 }
 
-@media #{$tablet-condition} {}
+.footer-logo__svg {
+  &:hover {
+    fill: #62d1ba;
+  }
 
-@media #{$desktop-condition} {}
+  &:active {
+    // fill: #62d1ba;
+    opacity: 0.3;
+  }
+}
