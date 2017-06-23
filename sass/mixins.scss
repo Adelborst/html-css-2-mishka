@@ -13,7 +13,7 @@
   @media #{$desktop-condition} {
     width: 1150px;
   }
-  outline: 1px dashed black;
+  // outline: 1px dashed black;
 }
 
 @mixin padder() {
@@ -46,7 +46,7 @@
   width: 260px;
   margin: 0 auto;
   padding: 0 30px;
-  outline: 1px dashed black;
+  // outline: 1px dashed black;
   @media #{$tablet-condition} {
     width: 668px;
     padding: 0 50px;
