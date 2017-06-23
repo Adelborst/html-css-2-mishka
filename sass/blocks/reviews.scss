@@ -5,8 +5,7 @@
 }
 
 .reviews__container {
-  @include padder();
-  // @include container();
+  @include padder(); // @include container();
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -21,8 +20,7 @@
     background-image: url("/img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    @media (min-resolution: 144dpi),
-           (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("/img/review@2x.jpg");
     }
   }
