@@ -58,6 +58,7 @@
       }
     }
     @media #{$desktop-condition} {
+      min-height: 627px;
       background-position: 50% -10px;
       background-size: 110%;
     }
