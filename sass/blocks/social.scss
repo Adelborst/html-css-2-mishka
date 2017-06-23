@@ -28,16 +28,37 @@
     width: 22px;
     height: 21px;
     background-image: url("../img/icon-insta.svg");
+    &:hover .icon-insta {
+      fill: #62d1ba;
+    }
+
+    &:active .icon-insta {
+      opacity: 0.3;
+    }
   }
   &--fb a {
     width: 15px;
     height: 29px;
     background-image: url("../img/icon-fb.svg");
     background-position: 0 0;
+    &:hover .icon-fb {
+      fill: #62d1ba;
+    }
+
+    &:active .icon-fb {
+      opacity: 0.3;
+    }
   }
   &--tw a {
     width: 24px;
     height: 20px;
     background-image: url("../img/icon-twitter.svg");
+    &:hover .icon-twitter {
+      fill: #62d1ba;
+    }
+
+    &:active .icon-twitter {
+      opacity: 0.3;
+    }
   }
 }
