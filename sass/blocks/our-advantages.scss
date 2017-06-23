@@ -27,37 +27,37 @@
   position: relative;
   &--eco::before {
     @include decorative(100px, 100px);
-    background-image: url("/img/icon-feature-1.svg");
+    background-image: url("../img/icon-feature-1.svg");
     top: 0;
     left: 7px;
   }
   &--cash::before {
     @include decorative(100px, 100px);
-    background-image: url("/img/icon-feature-3.svg");
+    background-image: url("../img/icon-feature-3.svg");
     top: 0;
     left: 0;
   }
   &--love::before {
     @include decorative(100px, 100px);
-    background-image: url("/img/icon-feature-5.svg");
+    background-image: url("../img/icon-feature-5.svg");
     top: 0;
     left: 7px;
   }
   &--clew::before {
     @include decorative(100px, 100px);
-    background-image: url("/img/icon-feature-2.svg");
+    background-image: url("../img/icon-feature-2.svg");
     top: 0;
     left: 7px;
   }
   &--rocket::before {
     @include decorative(100px, 100px);
-    background-image: url("/img/icon-feature-4.svg");
+    background-image: url("../img/icon-feature-4.svg");
     top: 0;
     left: -7px;
   }
   &--gift::before {
     @include decorative(100px, 100px);
-    background-image: url("/img/icon-feature-6.svg");
+    background-image: url("../img/icon-feature-6.svg");
     top: 0;
     left: 3px;
   }

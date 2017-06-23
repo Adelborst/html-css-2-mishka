@@ -28,7 +28,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("/img/icon-video.svg");
+    background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     width: 32px;
@@ -67,7 +67,7 @@
 
 .video-container__content {
   background-color: $gray-light-color;
-  background-image: url("/img/video-mobile@1x.jpg");
+  background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   video {
@@ -79,29 +79,29 @@
   margin-left: -1px;
   @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
-    background-image: url("/img/video-mobile@2x.jpg");
+    background-image: url("../img/video-mobile@2x.jpg");
   }
   @media #{$tablet-condition} {
     width: auto;
     height: 455px;
-    background-image: url("/img/video-tablet@1x.jpg");
+    background-image: url("../img/video-tablet@1x.jpg");
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("/img/video-tablet@2x.jpg");
+      background-image: url("../img/video-tablet@2x.jpg");
     }
   }
   @media #{$desktop-condition} {
     width: 682px;
     height: 455px; // padding-left: 80px;
-    background-image: url("/img/video-desktop@1x.jpg");
+    background-image: url("../img/video-desktop@1x.jpg");
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("/img/video-desktop@2x.jpg");
+      background-image: url("../img/video-desktop@2x.jpg");
     }
   }
   position: relative;
   &::before {
     content: "";
     position: absolute;
-    background-image: url("/img/icon-play.svg");
+    background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     width: 100px;
