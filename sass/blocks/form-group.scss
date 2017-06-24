@@ -77,11 +77,18 @@
   }
   @media #{$tablet-condition} {
     width: 167px;
+    &--color {
+      margin-top: 15px;
+      align-self: flex-start;
+    }
   }
   @media #{$desktop-condition} {
     width: 175px;
-    text-align: center; // padding-left: 175px;
-    // padding-right: 175px;
+    text-align: center;
+    &--color {
+      margin-top: 15px;
+      align-self: flex-start;
+    }
   }
 }
 

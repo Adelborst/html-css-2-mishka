@@ -1,5 +1,3 @@
-
-
 .text-field {
   font-size: 17px;
   line-height: 18px;
@@ -11,15 +9,13 @@
   padding-bottom: 15px;
   color: rgba(68, 68, 68, 1);
   outline: none;
-
   &:hover {
     border-color: #62d1ba;
   }
   &--tel,
   &--email {
     padding-top: 0;
-  }
-  // &--email {
+  } // &--email {
   //   background-image: url("../img/icon-mail.svg");
   //   background-repeat: no-repeat;
   //   background-position: 100% 5px;
@@ -39,61 +35,49 @@
 
 .text-field::-webkit-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
+  letter-spacing: 0.5px;
   @media #{$tablet-condition} {
     font-size: 19px;
-  }
-  @media #{$desktop-condition} {
-    letter-spacing: 0.55px;
   }
 }
 
 .text-field:-moz-placeholder {
   color: rgba(68, 68, 68, 0.3);
+  letter-spacing: 0.5px;
   @media #{$tablet-condition} {
     font-size: 19px;
-  }
-  @media #{$desktop-condition} {
-    letter-spacing: 0.55px;
   }
 }
 
 .text-field::-moz-placeholder {
   color: rgba(68, 68, 68, 0.3);
+  letter-spacing: 0.5px;
   @media #{$tablet-condition} {
     font-size: 19px;
-  }
-  @media #{$desktop-condition} {
-    letter-spacing: 0.55px;
   }
 }
 
 .text-field:-ms-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
+  letter-spacing: 0.5px;
   @media #{$tablet-condition} {
     font-size: 19px;
-  }
-  @media #{$desktop-condition} {
-    letter-spacing: 0.55px;
   }
 }
 
 .text-field::-ms-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
+  letter-spacing: 0.5px;
   @media #{$tablet-condition} {
     font-size: 19px;
-  }
-  @media #{$desktop-condition} {
-    letter-spacing: 0.55px;
   }
 }
 
 .text-field:placeholder-shown {
   color: rgba(68, 68, 68, 0.3);
+  letter-spacing: 0.5px;
   @media #{$tablet-condition} {
     font-size: 19px;
-  }
-  @media #{$desktop-condition} {
-    letter-spacing: 0.55px;
   }
 }
 
