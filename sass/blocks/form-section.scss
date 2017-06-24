@@ -18,4 +18,9 @@
       padding-bottom: 45px;
     }
   }
+  @media #{$desktop-condition} {
+    &--comment {
+      padding-bottom: 42px;
+    }
+  }
 }

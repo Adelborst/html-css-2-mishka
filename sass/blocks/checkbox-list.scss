@@ -6,6 +6,9 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  @media #{$desktop-condition} {
+      padding-right: 0;
+  }
 }
 
 .checkbox-list__item {
@@ -16,6 +19,15 @@
     }
   }
   @media #{$desktop-condition} {
-    flex-basis: (100% / 3);
+      width: 265px;
+  }
+}
+
+.form-group__item.checkbox-list {
+  @media #{$desktop-condition} {
+    &:last-child {
+      width: calc(100% - 145px);
+      padding-right: 0;
+    }
   }
 }

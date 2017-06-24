@@ -42,12 +42,18 @@
   @media #{$tablet-condition} {
     font-size: 19px;
   }
+  @media #{$desktop-condition} {
+    letter-spacing: 0.55px;
+  }
 }
 
 .text-field:-moz-placeholder {
   color: rgba(68, 68, 68, 0.3);
   @media #{$tablet-condition} {
     font-size: 19px;
+  }
+  @media #{$desktop-condition} {
+    letter-spacing: 0.55px;
   }
 }
 
@@ -56,12 +62,18 @@
   @media #{$tablet-condition} {
     font-size: 19px;
   }
+  @media #{$desktop-condition} {
+    letter-spacing: 0.55px;
+  }
 }
 
 .text-field:-ms-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
   @media #{$tablet-condition} {
     font-size: 19px;
+  }
+  @media #{$desktop-condition} {
+    letter-spacing: 0.55px;
   }
 }
 
@@ -70,12 +82,18 @@
   @media #{$tablet-condition} {
     font-size: 19px;
   }
+  @media #{$desktop-condition} {
+    letter-spacing: 0.55px;
+  }
 }
 
 .text-field:placeholder-shown {
   color: rgba(68, 68, 68, 0.3);
   @media #{$tablet-condition} {
     font-size: 19px;
+  }
+  @media #{$desktop-condition} {
+    letter-spacing: 0.55px;
   }
 }
 
