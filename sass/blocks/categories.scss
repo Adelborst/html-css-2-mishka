@@ -29,6 +29,8 @@
     padding: 0 160px 0 30px;
   }
   @media #{$tablet-condition} {
+    font-size: 20px;
+    line-height: 30px;
     height: 120px;
     padding-left: 35px;
     padding-right: 20px + 165px;
@@ -56,6 +58,11 @@
   height: 62px;
   width: 39px;
   fill: red;
+
+  @media #{$tablet-condition} {
+    right: 36px;
+    top: 30px;
+  }
 }
 
 .categories__item--toys a::after {
@@ -69,6 +76,11 @@
   background-position: 0 0;
   height: 61px;
   width: 60px;
+
+  @media #{$tablet-condition} {
+    right: 33px;
+    top: 30px;
+  }
 }
 
 .categories__item {

@@ -39,25 +39,3 @@
     flex-basis: calc(100% / 3);
   }
 }
-
-.footer-logo {
-  @media #{$mobile-condition} {
-    display: none;
-  }
-  @media #{$tablet-condition} {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-}
-
-.footer-logo__svg {
-  &:hover {
-    fill: #62d1ba;
-  }
-
-  &:active {
-    // fill: #62d1ba;
-    opacity: 0.3;
-  }
-}

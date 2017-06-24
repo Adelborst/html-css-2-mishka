@@ -2,6 +2,10 @@
   padding-top: 32px;
   padding-bottom: 35px;
   @include layout-centered();
+  @media #{$tablet-condition} {
+    padding-top: 43px;
+    padding-bottom: 55px;
+  }
   @media #{$desktop-condition} {
     padding-top: 70px;
   }
@@ -85,13 +89,17 @@
   // }
 }
 
-.contacts__table {
+.contacts__table,
+.contacts__table a {
   margin: 0;
   padding: 0; // @include container();
   margin-bottom: 38px;
   border-collapse: collapse;
   @media #{$tablet-condition} {
     margin-bottom: 62px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 55px;
   }
   @media #{$desktop-condition} {
     margin-bottom: 0;

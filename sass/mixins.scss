@@ -106,6 +106,10 @@
     background-repeat: repeat-x;
     background-position: 0 0;
     bottom: 0;
+    @media #{$tablet-condition} {
+      background-image: url("../img/zigzag-gray-tablet.png");
+      height: 17px;
+    }
   }
 }
 
