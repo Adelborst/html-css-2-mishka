@@ -11,7 +11,7 @@
   box-sizing: border-box;
   @include layout-centered();
   @include padder();
-  min-height: 177px;
+  min-height: 180px;
   text-align: center;
   font-weight: bold;
   color: $secondary-text-color;
@@ -20,6 +20,7 @@
   justify-content: space-around;
   font-size: 27px;
   line-height: 30px;
+  margin-top: -5px;
   @media #{$tablet-condition} {
     min-height: 225px;
     padding-left: 130px;
