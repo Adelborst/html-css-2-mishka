@@ -114,10 +114,14 @@
 }
 
 .form__footer-container .btn {
-  width: 230px;
+  @media #{$tablet-condition} {
+    width: 230px;
+  }
 }
 
 .form__footer-container p {
-  font-size: 17px;
-  line-height: 30px;
+  @media #{$tablet-condition} {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
