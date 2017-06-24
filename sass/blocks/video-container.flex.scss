@@ -12,12 +12,12 @@
 
 @media #{$desktop-condition} {
   .video-container__heading {
-    order: -10;
-  }
-  .video-container__description {
     order: -9;
   }
-  .video-container__content {
+  .video-container__description {
     order: -8;
+  }
+  .video-container__content {
+    order: -10;
   }
 }

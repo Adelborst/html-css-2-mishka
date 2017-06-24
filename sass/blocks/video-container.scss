@@ -1,12 +1,10 @@
 .video-container {
   // padding-bottom: 35px;
-  @media #{$desktop-condition} {
-    height: 455px;
-  }
   display: flex;
   flex-direction: column;
   @media #{$desktop-condition} {
-    flex-wrap: wrap-reverse;
+    min-height: 455px;
+    flex-wrap: wrap;
     padding-right: 55px;
   }
   border: 1px solid #ececec;
@@ -41,7 +39,7 @@
       top: 38px;
     }
     @media #{$desktop-condition} {
-      left: 80px;
+      left: 760px;
       top: 47px;
     }
   }
@@ -56,9 +54,10 @@
   }
   @media #{$desktop-condition} {
     padding-top: 95px;
+    margin-top: -450px;
     margin-bottom: 45px;
     box-sizing: border-box;
-    padding-left: 80px; // width: 365px;
+    padding-left: 760px;
     min-height: auto;
     display: block;
     flex-basis: 0;
@@ -124,7 +123,8 @@
     box-sizing: border-box;
     padding: 0;
     padding-left: 80px; // padding-left: 0;
-    width: 365px; // padding-left: 80px;
+    padding-left: 760px;
+    // width: 365px; // padding-left: 80px;
     // padding-right: 60px;
     // padding-bottom: 60px;
     // height: 455px;
