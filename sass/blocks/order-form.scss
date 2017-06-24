@@ -3,7 +3,7 @@
   padding-top: 22px;
   padding-bottom: 55px;
   @media #{$tablet-condition} {
-    padding-top: 78px;
+    padding-top: 70px;
     padding-bottom: 50px;
   }
   @media #{$desktop-condition} {
@@ -20,6 +20,7 @@
   @media #{$tablet-condition} {
     font-size: 17px;
     line-height: 30px;
+    margin-bottom: 9px;
   }
   @media #{$desktop-condition} {
     // width: 700px;
@@ -33,6 +34,7 @@
 .order-form__footer-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   @media #{$tablet-condition} {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -54,6 +56,7 @@
   line-height: 16px;
   margin-bottom: 27px;
   @media #{$tablet-condition} {
+    margin: 0;
     font-size: 17px;
     line-height: 30px;
   }

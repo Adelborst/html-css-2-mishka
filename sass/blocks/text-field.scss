@@ -1,0 +1,117 @@
+
+
+.text-field {
+  font-size: 17px;
+  line-height: 18px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: rgba(68, 68, 68, 1);
+  outline: none;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+  &--tel,
+  &--email {
+    padding-top: 0;
+  }
+  // &--email {
+  //   background-image: url("../img/icon-mail.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 100% 5px;
+  // }
+  @media #{$tablet-condition} {
+    padding-left: 18px;
+    font-size: 19px;
+    flex-grow: 1;
+    &--tel {
+      background-position: 98% 10px;
+    }
+    &--email {
+      background-position: 98% 5px;
+    }
+  }
+}
+
+.text-field::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+  @media #{$tablet-condition} {
+    font-size: 19px;
+  }
+}
+
+.text-field:-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+  @media #{$tablet-condition} {
+    font-size: 19px;
+  }
+}
+
+.text-field::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+  @media #{$tablet-condition} {
+    font-size: 19px;
+  }
+}
+
+.text-field:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+  @media #{$tablet-condition} {
+    font-size: 19px;
+  }
+}
+
+.text-field::-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+  @media #{$tablet-condition} {
+    font-size: 19px;
+  }
+}
+
+.text-field:placeholder-shown {
+  color: rgba(68, 68, 68, 0.3);
+  @media #{$tablet-condition} {
+    font-size: 19px;
+  }
+}
+
+// .text-field:hover::-webkit-input-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+// .text-field:hover:-moz-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+// .text-field:hover::-moz-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+// .text-field:hover:-ms-input-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+// .text-field:hover::-ms-input-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+// .text-field:hover:placeholder-shown {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+// .text-field:focus::-webkit-input-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+// .text-field:focus:-moz-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+// .text-field:focus::-moz-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+// .text-field:focus:-ms-input-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+// .text-field:focus::-ms-input-placeholder {
+//     color: rgba(0, 0, 0, 0.6);
+// }
+// .text-field:focus:placeholder-shown {
+//     color: rgba(0, 0, 0, 0.6);
+// }

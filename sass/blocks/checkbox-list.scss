@@ -9,11 +9,11 @@
 }
 
 .checkbox-list__item {
-  label:first-of-type {
-
-  }
   @media #{$tablet-condition} {
-    flex-basis: 50%;
+    &:nth-of-type(2n+1) {
+      width: 265px;
+      margin-right: 0px;
+    }
   }
   @media #{$desktop-condition} {
     flex-basis: (100% / 3);

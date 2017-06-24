@@ -4,9 +4,9 @@
 }
 
 @media #{$tablet-condition} {
-  .radio-list__item,
-  .checkbox-list__item {
-    margin-bottom: 25px;
+  .radio-list__item:not(:last-of-type),
+  .checkbox-list__item:not(:last-of-type) {
+    margin-bottom: 27px;
   }
   .radio-list__item:last-of-type,
   .checkbox-list__item:last-of-type,
