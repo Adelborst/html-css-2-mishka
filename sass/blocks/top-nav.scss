@@ -17,8 +17,10 @@
   a {
     font-size: 17px;
     @media #{$tablet-condition} {
-      font-size: 15px;
-      // width: 668px;
+      font-size: 15px; // width: 668px;
+    }
+    @media #{$desktop-condition} {
+      font-size: 17px;
     }
   }
 }
@@ -43,13 +45,12 @@
       opacity: 0.3;
     }
   }
-
   @media #{$tablet-condition} {
     justify-content: flex-start;
   }
   @media #{$desktop-condition} {
-    margin-left: -30px;
-    // flex-basis: 40%;
+    margin-top: 8px;
+    margin-left: -45px; // flex-basis: 40%;
     justify-content: center;
   }
 }
@@ -242,25 +243,25 @@
   .top-nav__primary-item {
     a {
       width: auto;
+      height: 88px;
     }
     &:not(:last-of-type) {
       a {
         width: 183px - 20px; // padding-top: 22px;
         padding-right: 20px;
-        height: 88px;
         border-right: 1px solid #ececec;
       }
     }
     &:not(:first-of-type) {
       a {
-        padding-left: 35px;
-        // padding-right: 35px;
+        padding-left: 35px; // padding-right: 35px;
       }
     }
   }
   .top-nav__deals-item {
     a {
-      height: 88px;
+      height: 58px;
+      font-size: 15px;
     }
     &:not(:last-of-type) {
       a {
@@ -274,5 +275,8 @@
         padding-right: 35px;
       }
     }
+  }
+  .top-nav__search a {
+    font-size: 0;
   }
 }

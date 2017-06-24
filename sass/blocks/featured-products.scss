@@ -7,10 +7,10 @@
     padding-bottom: 69px;
   }
   @media #{$desktop-condition} {
-    padding-top: 71px;
+    padding-top: 57px;
     padding-bottom: 96px;
   }
-  @include zigzag();
+  @include zigzag-gray();
 }
 
 .featured-products__wrapper {

@@ -39,6 +39,13 @@
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 50px;
+    letter-spacing: -0.7px;
+  }
+  @media #{$desktop-condition} {
+    padding-top: 40px;
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 50px;
   }
 }
 
@@ -56,6 +63,9 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 60px;
+  }
+  @media #{$desktop-condition} {
+    margin-bottom: 40px;
   }
 }
 
@@ -75,6 +85,9 @@
   @media #{$tablet-condition} {
     font-size: 18px;
   }
+  @media #{$desktop-condition} {
+    letter-spacing: -0.5px;
+  }
 }
 
 .reviews__author-username {
@@ -91,6 +104,9 @@
 .reviews__write {
   @media #{$tablet-condition} {
     width: 175px;
+  }
+  @media #{$desktop-condition} {
+    // margin-top: -35px;
   }
 }
 

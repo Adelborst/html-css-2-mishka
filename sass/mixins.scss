@@ -12,8 +12,7 @@
   }
   @media #{$desktop-condition} {
     width: 1150px;
-  }
-  // outline: 1px dashed black;
+  } // outline: 1px dashed black;
 }
 
 @mixin padder() {
@@ -45,8 +44,7 @@
 @mixin container() {
   width: 260px;
   margin: 0 auto;
-  padding: 0 30px;
-  // outline: 1px dashed black;
+  padding: 0 30px; // outline: 1px dashed black;
   @media #{$tablet-condition} {
     width: 668px;
     padding: 0 50px;
@@ -57,52 +55,23 @@
   }
 }
 
-@mixin container0() {
-  width: initial;
-  margin: initial;
-  padding: initial;
-  outline: none;
-  @media #{$tablet-condition} {
-    width: initial;
-    padding: initial;
-  }
-  @media #{$desktop-condition} {
-    width: initial;
-    padding: initial;
-  }
-}
-
 @mixin center-flex() {
   display: flex;
   align-items: center;
 }
 
-// @mixin container2() {
-//   width: 260px;
-//   padding: 0 30px;
-//   margin: 0 auto;
-//   @media #{$tablet-condition} {
-//     width: 670px;
-//     padding: 0 50px;
-//   }
-//   @media #{$desktop-condition} {
-//     width: 1050px;
-//     padding: 0 50px;
-//   }
-// }
-
 .container {
   @include container();
 }
 
-@mixin zigzag() {
+@mixin zigzag-gray() {
   position: relative;
   &::after {
     position: absolute;
     content: "";
     width: 100%;
     height: 7px;
-    background-image: url("../img/zigzag.png");
+    background-image: url("../img/zigzag-gray-mobile.png");
     background-repeat: repeat-x;
     background-position: 0 0;
     bottom: 0;
@@ -110,24 +79,37 @@
       background-image: url("../img/zigzag-gray-tablet.png");
       height: 17px;
     }
+    @media #{$desktop-condition} {
+      background-image: url("../img/zigzag-gray-desktop.png");
+      height: 23px;
+    }
   }
 }
 
-@mixin zigzag-tablet() {
-  position: relative;
-  &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 10px;
-    background-image: url("../img/zigzag-tablet-1.png");
-    background-repeat: repeat-x;
-    background-position: 0 0;
-    bottom: 0px;
+@mixin zigzag-white() {
+  @media #{$tablet-condition} {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 10px;
+      background-image: url("../img/zigzag-white-tablet.png");
+      background-repeat: repeat-x;
+      background-position: 0 0;
+      bottom: 0px;
+    }
+  }
+  @media #{$desktop-condition} {
+    &::after {
+      background-image: url("../img/zigzag-white-desktop.png");
+      height: 34px;
+    }
   }
 }
 
-@mixin decorative($width, $height) {
+@mixin decorative($width,
+$height) {
   content: "";
   position: absolute;
   background-color: transparent;

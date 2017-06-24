@@ -4,9 +4,7 @@
   //   height: 834px;
   // }
   background-color: $page-header-bg-color;
-  @media #{$tablet-condition} {
-    @include zigzag-tablet();
-  }
+  @include zigzag-white();
 }
 
 .page-header__heading {
@@ -59,8 +57,8 @@
     }
     @media #{$desktop-condition} {
       min-height: 627px;
-      background-position: 50% -10px;
-      background-size: 110%;
+      background-position: 50% 0;
+      background-size: 1250px 750px;
     }
   }
 }

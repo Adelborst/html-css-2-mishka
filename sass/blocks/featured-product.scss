@@ -45,7 +45,9 @@
   }
   @media #{$desktop-condition} {
     flex-basis: calc(100% - 175px);
-    margin-bottom: 50px;
+    margin-top: -5px;
+    margin-left: -5px;
+    margin-bottom: 55px;
     font-size: 53px;
     line-height: 57px;
     position: relative;
@@ -67,6 +69,8 @@
     margin-right: 5px;
   }
   @media #{$desktop-condition} {
+    margin-top: 55px;
+    margin-left: -5px;
     box-sizing: border-box;
     flex-basis: 175px;
     padding: 0 30px;
@@ -150,7 +154,7 @@
     margin-bottom: 32px;
   }
   @media #{$desktop-condition} {
-    margin-bottom: 65px;
+    margin-bottom: 45px;
   }
 }
 
@@ -171,6 +175,7 @@
     margin-bottom: 18px;
   }
   @media #{$desktop-condition} {
+    margin-bottom: 25px;
   }
 }
 

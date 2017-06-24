@@ -6,10 +6,12 @@
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 50px;
+    letter-spacing: -0.7px;
   }
   @media #{$desktop-condition} {
     font-size: 53px;
     line-height: 57px;
+    margin-left: -3px;
   }
 }
 
