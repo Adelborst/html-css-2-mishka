@@ -22,7 +22,8 @@
   line-height: 30px;
   margin-top: -5px;
   @media #{$tablet-condition} {
-    min-height: 225px;
+    margin-top: 6px;
+    min-height: 220px;
     padding-left: 130px;
     padding-right: 130px;
     font-size: 43px;
