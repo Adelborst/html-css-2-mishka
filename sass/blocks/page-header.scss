@@ -30,7 +30,8 @@
     line-height: 50px;
   }
   @media #{$desktop-condition} {
-    min-height: 255px;
+    margin-top: -20px;
+    min-height: 290px;
     padding-left: 175px;
     padding-right: 175px;
     font-size: 53px;
