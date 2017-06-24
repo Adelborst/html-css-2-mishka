@@ -10,6 +10,9 @@
   @media #{$desktop-condition} {
     width: 1050px;
   }
+  a {
+    font-size: 17px;
+  }
 }
 
 .top-nav__container {
@@ -78,7 +81,7 @@
   display: none;
   a {
     display: block;
-    min-height: 80px;
+    min-height: 78px;
     display: flex;
     align-items: center;
     padding-left: 30px + 45px;
