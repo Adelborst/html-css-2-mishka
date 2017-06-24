@@ -4,8 +4,8 @@
   position: relative;
   svg {
     position: absolute;
-    right: 0;
-    top: 10px;
+    right: 6px;
+    top: -7px;
     @media #{$tablet-condition} {
       right: 10px;
     }
@@ -23,7 +23,7 @@
     }
   }
   &:not(:last-of-type) {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
   @media #{$tablet-condition} {
     flex-direction: row;
@@ -49,11 +49,10 @@
   &:hover {
     border-color: #62d1ba;
   }
-  // &--tel {
-  //   background-image: url("../img/icon-phone.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: 100% 10px;
-  // }
+  &--tel,
+  &--email {
+    padding-top: 0;
+  }
   // &--email {
   //   background-image: url("../img/icon-mail.svg");
   //   background-repeat: no-repeat;
@@ -71,63 +70,63 @@
   }
 }
 
-.form-field .text-field::-webkit-input-placeholder {
+.text-field::-webkit-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
 }
 
-.form-field .text-field:-moz-placeholder {
+.text-field:-moz-placeholder {
   color: rgba(68, 68, 68, 0.3);
 }
 
-.form-field .text-field::-moz-placeholder {
+.text-field::-moz-placeholder {
   color: rgba(68, 68, 68, 0.3);
 }
 
-.form-field .text-field:-ms-input-placeholder {
+.text-field:-ms-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
 }
 
-.form-field .text-field::-ms-input-placeholder {
+.text-field::-ms-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
 }
 
-.form-field .text-field:placeholder-shown {
+.text-field:placeholder-shown {
   color: rgba(68, 68, 68, 0.3);
 }
 
-// .form-field .text-field:hover::-webkit-input-placeholder {
+// .text-field:hover::-webkit-input-placeholder {
 //     color: rgba(0, 0, 0, 0.6);
 // }
-// .form-field .text-field:hover:-moz-placeholder {
+// .text-field:hover:-moz-placeholder {
 //     color: rgba(0, 0, 0, 0.6);
 // }
-// .form-field .text-field:hover::-moz-placeholder {
+// .text-field:hover::-moz-placeholder {
 //     color: rgba(0, 0, 0, 0.6);
 // }
-// .form-field .text-field:hover:-ms-input-placeholder {
+// .text-field:hover:-ms-input-placeholder {
 //     color: rgba(0, 0, 0, 0.6);
 // }
-// .form-field .text-field:hover::-ms-input-placeholder {
+// .text-field:hover::-ms-input-placeholder {
 //     color: rgba(0, 0, 0, 0.6);
 // }
-// .form-field .text-field:hover:placeholder-shown {
+// .text-field:hover:placeholder-shown {
 //     color: rgba(0, 0, 0, 0.6);
 // }
-// .form-field .text-field:focus::-webkit-input-placeholder {
+// .text-field:focus::-webkit-input-placeholder {
 //     color: rgba(0, 0, 0, 0.6);
 // }
-// .form-field .text-field:focus:-moz-placeholder {
+// .text-field:focus:-moz-placeholder {
 //     color: rgba(0, 0, 0, 0.6);
 // }
-// .form-field .text-field:focus::-moz-placeholder {
+// .text-field:focus::-moz-placeholder {
 //     color: rgba(0, 0, 0, 0.6);
 // }
-// .form-field .text-field:focus:-ms-input-placeholder {
+// .text-field:focus:-ms-input-placeholder {
 //     color: rgba(0, 0, 0, 0.6);
 // }
-// .form-field .text-field:focus::-ms-input-placeholder {
+// .text-field:focus::-ms-input-placeholder {
 //     color: rgba(0, 0, 0, 0.6);
 // }
-// .form-field .text-field:focus:placeholder-shown {
+// .text-field:focus:placeholder-shown {
 //     color: rgba(0, 0, 0, 0.6);
 // }

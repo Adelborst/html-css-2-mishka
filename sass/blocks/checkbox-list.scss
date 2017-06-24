@@ -9,6 +9,9 @@
 }
 
 .checkbox-list__item {
+  label:first-of-type {
+
+  }
   @media #{$tablet-condition} {
     flex-basis: 50%;
   }

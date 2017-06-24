@@ -124,7 +124,7 @@
       <div class="form-section">
         <div class="container">
           <div class="form-group">
-            <div class="form-group__name form-group__item">ФИО</div>
+            <div class="form-group__name form-group__name--fio form-group__item">ФИО</div>
             <div class="form-group__group form-group__item">
               <section class="form-field">
                 <label class="form-group__label" for="first-name">Имя:</label>
@@ -143,9 +143,9 @@
         </div>
       </div>
 
-      <div class="form-section">
+      <div class="form-section form-section--contacts">
         <div class="container">
-          <div class="form-group">
+          <div class="form-group form-group--tel">
             <div class="form-group__name form-group__item">Тел</div>
             <section class="form-field form-group__item">
               <input class="text-field text-field--tel" type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
@@ -166,7 +166,7 @@
               </svg>
             </section>
           </div>
-          <div class="form-group">
+          <div class="form-group form-group--email">
             <div class="form-group__name form-group__item">E-mail</div>
             <section class="form-field form-group__item">
               <input class="text-field text-field--email" type="text" name="email" placeholder="Ваш Email*">
@@ -180,7 +180,7 @@
         </div>
       </div>
 
-      <div class="form-section">
+      <div class="form-section form-section--comment">
         <div class="container">
           <div class="form-group form-group--comment">
             <div class="form-group__name form-group__item">Доп</div>
@@ -190,10 +190,10 @@
           </div>
         </div>
       </div>
-      <div class="form__footer">
+      <div class="order-form__footer">
         <div class="container">
-          <div class="form__footer-container">
-            <p class="form__constraints">*Поля обязательны для заполнения</p>
+          <div class="order-form__footer-container">
+            <p class="order-form__constraints">*Поля обязательны для заполнения</p>
             <button type="submit" class="btn">Отправить заказ</button>
           </div>
         </div>

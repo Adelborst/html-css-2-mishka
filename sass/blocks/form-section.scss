@@ -1,4 +1,11 @@
 .form-section {
+  margin-bottom: 33px;
+  &--contacts {
+    margin-bottom: 30px;
+  }
+  &--comment {
+    margin-bottom: 0;
+  }
   @media #{$tablet-condition} {
     padding-top: 50px;
     padding-bottom: 50px;
