@@ -1,8 +1,14 @@
 .top-nav {
   position: relative;
+  margin: 0 auto;
   height: 80px;
+  width: 320px;
   @media #{$tablet-condition} {
     height: 88px;
+    width: 668px;
+  }
+  @media #{$desktop-condition} {
+    width: 1050px;
   }
 }
 
@@ -47,7 +53,7 @@
   height: 20px;
   background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
-  right: 0;
+  right: 30px;
   top: 30px;
   &:focus {
     outline: none;
@@ -75,7 +81,7 @@
     min-height: 80px;
     display: flex;
     align-items: center;
-    padding-left: 45px;
+    padding-left: 30px + 45px;
     @media #{$tablet-condition} {
       padding-left: 0;
     }
@@ -120,8 +126,7 @@
     width: 18px;
     height: 19px;
     top: calc(50% - 19px / 2);
-    left: 2px;
-    // background-image: url("../img/icon-search.svg");
+    left: 32px; // background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     @media #{$tablet-condition} {
@@ -150,7 +155,7 @@
     width: 21px;
     height: 18px;
     top: calc(50% - 18px / 2);
-    left: 2px;
+    left: 32px;
     background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
