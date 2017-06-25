@@ -4,42 +4,48 @@
   //   height: 834px;
   // }
   background-color: $page-header-bg-color;
-  @media #{$tablet-condition} {
-    @include zigzag-tablet();
-  }
+  @include zigzag-white();
 }
 
 .page-header__heading {
-  box-sizing: border-box;
-  @include layout-centered();
-  @include padder();
-  min-height: 177px;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  // box-sizing: border-box;
+  // @include layout-centered();
+  // @include padder();
   text-align: center;
   font-weight: bold;
   color: $secondary-text-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  padding-top: 74px;
+  min-height: 106px;
   font-size: 27px;
   line-height: 30px;
+  margin-top: -5px;
   @media #{$tablet-condition} {
-    min-height: 225px;
-    padding-left: 130px;
-    padding-right: 130px;
+    margin-top: 6px;
+    min-height: 130px;
+    padding-top: 89px;
+    // padding-left: 130px;
+    // padding-right: 130px;
     font-size: 43px;
     line-height: 50px;
   }
   @media #{$desktop-condition} {
-    min-height: 255px;
-    padding-left: 175px;
-    padding-right: 175px;
+    margin-top: -20px;
+    min-height: 178px;
+    padding-top: 113px;
+    // padding-left: 51px;
     font-size: 53px;
     line-height: 57px;
   }
   &--bg-toys {
-    display: block;
-    padding-top: 60px;
-    min-height: 283px;
+    box-sizing: border-box;
+    padding-top: 75px;
+    min-height: 286px;
     background-color: $page-header-bg-color;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -49,17 +55,25 @@
     }
     @media #{$tablet-condition} {
       background-image: url("../img/hero-desktop@1x.jpg");
-      min-height: 627px;
-      padding-top: 158px;
-      background-position: 50% 0;
-      background-size: 150%;
+      min-height: 620px;
+      padding-top: 148px;
+      background-position: 48% -6px;
+      background-size: 1150px;
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/hero-desktop@2x.jpg");
       }
     }
     @media #{$desktop-condition} {
-      background-position: 50% -10px;
-      background-size: 110%;
+      min-height: 646px;
+      padding-top: 173px;
+      // padding-left: 175px;
+      // padding-right: 175px;
+      background-position: 50% 13px;
+      background-size: 1250px 760px;
+      h2 {
+        padding-left: 175px;
+        padding-right: 175px;
+      }
     }
   }
 }

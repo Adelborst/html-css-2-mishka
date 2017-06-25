@@ -1,16 +1,16 @@
 .featured-products {
   // @include layout-centered();
-  padding-top: 30px;
+  padding-top: 26px;
   padding-bottom: 42px;
   @media #{$tablet-condition} {
     padding-top: 48px;
     padding-bottom: 69px;
   }
   @media #{$desktop-condition} {
-    padding-top: 71px;
+    padding-top: 57px;
     padding-bottom: 96px;
   }
-  @include zigzag();
+  @include zigzag-gray();
 }
 
 .featured-products__wrapper {

@@ -1,9 +1,29 @@
 .form-section {
+  margin-bottom: 33px;
+  &--contacts {
+    margin-bottom: 30px;
+  }
+  &--comment {
+    margin-bottom: 0;
+  }
   @media #{$tablet-condition} {
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 0;
     &:nth-of-type(2n+1) {
       background-color: $gray-light-color;
+    }
+    &--contacts {
+      padding-top: 65px;
+      padding-bottom: 45px;
+    }
+    &--comment {
+      margin-bottom: -5px;
+    }
+  }
+  @media #{$desktop-condition} {
+    &--comment {
+      padding-bottom: 42px;
     }
   }
 }

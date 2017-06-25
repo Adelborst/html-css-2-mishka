@@ -1,8 +1,27 @@
 .top-nav {
+  border-bottom: 1px solid #ececec;
+}
+
+.top-nav__wrapper {
   position: relative;
+  margin: 0 auto;
   height: 80px;
+  width: 320px;
   @media #{$tablet-condition} {
     height: 88px;
+    width: 668px;
+  }
+  @media #{$desktop-condition} {
+    width: 1050px;
+  }
+  a {
+    font-size: 17px;
+    @media #{$tablet-condition} {
+      font-size: 15px; // width: 668px;
+    }
+    @media #{$desktop-condition} {
+      font-size: 17px;
+    }
   }
 }
 
@@ -26,12 +45,17 @@
       opacity: 0.3;
     }
   }
-
+  &--index img {
+    &:hover {
+      opacity: 1;
+    }
+  }
   @media #{$tablet-condition} {
     justify-content: flex-start;
   }
   @media #{$desktop-condition} {
-    flex-basis: calc(100% / 3);
+    margin-top: 8px;
+    margin-left: -25px; // flex-basis: 40%;
     justify-content: center;
   }
 }
@@ -46,7 +70,7 @@
   height: 20px;
   background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
-  right: 0;
+  right: 30px;
   top: 30px;
   &:focus {
     outline: none;
@@ -71,11 +95,14 @@
   display: none;
   a {
     display: block;
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    padding-left: 45px;
+    padding-left: 30px + 45px;
+    @media #{$mobile-condition} {
+      padding-top: 25px;
+      padding-bottom: 29px;
+    }
     @media #{$tablet-condition} {
+      display: flex;
+      align-items: center;
       padding-left: 0;
     }
   }
@@ -85,7 +112,7 @@
   .top-nav--open {
     .top-nav__primary-list,
     .top-nav__search-and-cart {
-      display: initial;
+      display: block;
     }
   }
 }
@@ -97,12 +124,14 @@
     z-index: 1;
   }
   @media #{$desktop-condition} {
-    flex-basis: calc(100% / 3);
+    // flex-basis: 40%;
   }
 }
 
 .top-nav__primary-list .top-nav__menu-item:first-of-type {
-  border-top: 1px solid #ececec;
+  @media #{$mobile-condition} {
+    border-top: 1px solid #ececec;
+  }
 }
 
 .top-nav__menu-item {
@@ -119,8 +148,7 @@
     width: 18px;
     height: 19px;
     top: calc(50% - 19px / 2);
-    left: 2px;
-    // background-image: url("../img/icon-search.svg");
+    left: 32px; // background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     @media #{$tablet-condition} {
@@ -149,7 +177,7 @@
     width: 21px;
     height: 18px;
     top: calc(50% - 18px / 2);
-    left: 2px;
+    left: 32px;
     background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -180,6 +208,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    // align-content: flex-start;
   }
   .top-nav__search-and-cart,
   .top-nav__primary-list {
@@ -192,19 +221,24 @@
     font-size: 0;
   }
   .top-nav__cart a {
-    width: 264px - 82px;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 17px;
+    width: 266px;
     height: 88px;
-    padding-left: 82px;
+    padding-left: 84px;
   }
   .top-nav__primary-item a {
-    width: 167px - 20px; // padding-top: 22px;
+    width: 167px - 20px;
+    padding-top: 19px;
     padding-right: 20px;
-    height: 88px;
+    // min-height: 57px;
   }
   .top-nav__delivery {
-    display: initial;
+    display: block;
     font-size: 15px;
     line-height: 24px;
+    padding-top: 16px;
   }
   .top-nav__toggle {
     display: none;
@@ -218,25 +252,27 @@
   .top-nav__primary-item {
     a {
       width: auto;
+      height: 88px;
+      padding-top: 0;
+      padding-right: 0;
     }
     &:not(:last-of-type) {
       a {
         width: 183px - 20px; // padding-top: 22px;
         padding-right: 20px;
-        height: 88px;
-        border-right: 1px solid gray;
+        border-right: 1px solid #ececec;
       }
     }
     &:not(:first-of-type) {
       a {
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 35px; // padding-right: 35px;
       }
     }
   }
   .top-nav__deals-item {
     a {
-      height: 88px;
+      height: 58px;
+      font-size: 15px;
     }
     &:not(:last-of-type) {
       a {
@@ -250,5 +286,11 @@
         padding-right: 35px;
       }
     }
+  }
+  .top-nav__search a {
+    font-size: 0;
+  }
+  .top-nav__delivery {
+    padding-top: 1px;
   }
 }

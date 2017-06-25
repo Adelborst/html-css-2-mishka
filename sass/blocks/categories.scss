@@ -6,9 +6,24 @@
 
 .categories__list {
   @include reset-list();
+  display: block;
+  @media #{$tablet-condition} {
   display: flex;
-  @media #{$mobile-condition} {
-    flex-direction: column;
+    flex-direction: row;
+  }
+}
+
+.categories__item {
+  // transform: translateY(0px);
+  // transform: translateY(-5px);
+  // transition: height 0.2s ease-out;
+  // height: 140px;
+  // top: -20px;
+  @media #{$tablet-condition} {
+    position: relative;
+    &:hover {
+      margin-top: -5px;
+    }
   }
 }
 
@@ -18,28 +33,40 @@
   line-height: 24px;
   font-weight: bold;
   color: $secondary-text-color-invert;
-  display: block; // outline: 1px dashed black;
-  display: flex;
-  align-items: center;
-  @media #{$mobile-condition} {
-    box-sizing: border-box;
-    height: 103px;
-    margin: 0 auto;
-    width: 320px;
-    padding: 0 160px 0 30px;
-  }
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
+  // align-items: center;
+  display: block;
+  padding-top: 25px;
+  min-height: 78px;
+  width: 130px;
+  padding-left: 30px;
+  padding-right: 160px;
+  margin-left: auto;
+  margin-right: auto;
   @media #{$tablet-condition} {
-    height: 120px;
-    padding-left: 35px;
-    padding-right: 20px + 165px;
+    font-size: 20px;
+    line-height: 30px;
+    // min-height: 120px;
+    min-height: 89px;
+    padding-top: 28px;
+    // padding-left: 35px;
+    // padding-right: 20px + 165px;
   }
   @media #{$desktop-condition} {
-    padding-left: 40px;
-    padding-right: 25px + 350px;
+    // margin-top: -10px;
+    padding-left: 30px;
+    padding-right: 350px;
+    min-height: 108px;
+    // &:hover {
+    //   transform: translateY(-5px);
+    //   min-height: 140px;
+    // }
   }
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   &:active {
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -56,6 +83,10 @@
   height: 62px;
   width: 39px;
   fill: red;
+  @media #{$tablet-condition} {
+    right: 30px;
+    top: 30px;
+  }
 }
 
 .categories__item--toys a::after {
@@ -69,12 +100,18 @@
   background-position: 0 0;
   height: 61px;
   width: 60px;
+  @media #{$tablet-condition} {
+    right: 28px;
+    top: 30px;
+  }
 }
 
 .categories__item {
   position: relative;
-  flex-grow: 1;
-  flex-basis: 0;
+  @media #{$tablet-condition} {
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
   &:nth-child(2n+1) {
     background-color: $promo-color-primary;
   }

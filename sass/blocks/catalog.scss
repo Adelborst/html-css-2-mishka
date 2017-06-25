@@ -27,7 +27,7 @@
 .catalog__item:not(:last-of-type) {
   margin-bottom: 30px;
   @media #{$tablet-condition} {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
   @media #{$desktop-condition} {
     margin-bottom: 0;

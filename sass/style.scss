@@ -2,20 +2,22 @@
 @import "mixins";
 @import "mixins-fonts";
 @import "global/layout";
+@import "global/checkbox-radio";
+@import "global/fixes";
+
 @import "blocks/container";
 @import "blocks/container-desktop";
 
 @import "blocks/top-nav";
 @import "blocks/top-nav.order";
 @import "blocks/page-header";
-@import "blocks/main-nav";
-@import "blocks/main-nav__order";
 @import "blocks/btn";
 @import "blocks/hero-unit";
 
 @import "blocks/page";
 
 @import "blocks/page-footer";
+@import "blocks/footer-logo";
 
 @import "blocks/contacts";
 @import "blocks/contacts.flex";
@@ -24,7 +26,6 @@
 
 @import "blocks/featured-products";
 @import "blocks/featured-product";
-@import "blocks/featured-product__flex";
 
 @import "blocks/about-us";
 @import "blocks/our-advantages";
@@ -40,13 +41,15 @@
 @import "blocks/video-container";
 @import "blocks/video-container.flex";
 
+
 @import "blocks/order-form";
 @import "blocks/form-section";
 @import "blocks/form-group";
 @import "blocks/form-field";
 @import "blocks/radio-list";
-@import "blocks/radio";
+@import "blocks/radio-checkbox-list";
 @import "blocks/checkbox-list";
+@import "blocks/text-field";
 
 @import "blocks/social";
 @import "blocks/catalog-page";

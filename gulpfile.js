@@ -83,6 +83,11 @@ gulp.task("normalize:minify", function() {
     .pipe(gulp.dest("build/css"))
 });
 
+gulp.task("picturefill:copy", function() {
+  return gulp.src("node_modules/picturefill/dist/picturefill.min.js")
+    .pipe(gulp.dest("build/js"));
+})
+
 gulp.task("html:update", ["html:copy"], function(done) {
   server.reload();
   done();
@@ -111,6 +116,7 @@ gulp.task("build", function(arg) {
     "normalize:copy",
     "style",
     "normalize:minify",
+    "picturefill:copy",
     "images",
     "symbols",
     arg);

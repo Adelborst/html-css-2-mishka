@@ -1,7 +1,15 @@
 .about-us {
   // @include layout-centered();
-  padding-top: 35px;
-  @include zigzag();
+  padding-top: 25px;
+  @media #{$tablet-condition} {
+    padding-top: 50px;
+    padding-bottom: 33px;
+  }
+  @media #{$desktop-condition} {
+    padding-top: 58px;
+    padding-bottom: 44px;
+  }
+  @include zigzag-gray();
 }
 
 .about-us__outer {
