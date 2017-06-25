@@ -1,0 +1,7 @@
+label[for="interior"] {
+  position: relative;
+  top: 4px;
+  @media #{$desktop-condition} {
+    top: 0;
+  }
+}

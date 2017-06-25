@@ -17,6 +17,9 @@
       padding-top: 65px;
       padding-bottom: 45px;
     }
+    &--comment {
+      margin-bottom: -5px;
+    }
   }
   @media #{$desktop-condition} {
     &--comment {
