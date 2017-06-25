@@ -33,8 +33,6 @@
     min-height: 178px;
     padding-top: 113px;
     padding-left: 37px;
-    // padding-left: 175px;
-    // padding-right: 175px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -62,6 +60,8 @@
     @media #{$desktop-condition} {
       min-height: 646px;
       padding-top: 173px;
+      padding-left: 175px;
+      padding-right: 175px;
       background-position: 50% 13px;
       background-size: 1250px 760px;
     }
