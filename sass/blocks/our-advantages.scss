@@ -17,6 +17,7 @@
 
 .our-advantages__list {
   @include reset-list();
+  width: 260px;
 }
 
 .our-advantages__item {

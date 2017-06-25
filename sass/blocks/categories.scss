@@ -6,9 +6,10 @@
 
 .categories__list {
   @include reset-list();
+  display: block;
+  @media #{$tablet-condition} {
   display: flex;
-  @media #{$mobile-condition} {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -29,27 +30,26 @@
   line-height: 24px;
   font-weight: bold;
   color: $secondary-text-color-invert;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  box-sizing: border-box;
-  padding-top: 23px;
-  @media #{$mobile-condition} {
-    box-sizing: border-box;
-    height: 103px;
-    margin: 0 auto;
-    width: 320px;
-    padding-right: 160px;
-    padding-left: 30px;
-  }
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
+  // align-items: center;
+  display: block;
+  padding-top: 25px;
+  min-height: 78px;
+  width: 130px;
+  padding-left: 30px;
+  padding-right: 160px;
+  margin-left: auto;
+  margin-right: auto;
   @media #{$tablet-condition} {
     font-size: 20px;
     line-height: 30px;
-    min-height: 120px;
+    // min-height: 120px;
+    min-height: 89px;
     padding-top: 28px;
-    padding-left: 35px;
-    padding-right: 20px + 165px;
+    // padding-left: 35px;
+    // padding-right: 20px + 165px;
     // &:hover {
     //   transform: translateY(-5px);
     //   min-height: 125px;
@@ -57,9 +57,9 @@
   }
   @media #{$desktop-condition} {
     // margin-top: -10px;
-    padding-left: 38px;
-    padding-right: 25px + 350px;
-    min-height: 135px;
+    padding-left: 30px;
+    padding-right: 350px;
+    min-height: 108px;
     // &:hover {
     //   transform: translateY(-5px);
     //   min-height: 140px;
@@ -85,7 +85,7 @@
   width: 39px;
   fill: red;
   @media #{$tablet-condition} {
-    right: 36px;
+    right: 30px;
     top: 30px;
   }
 }
@@ -102,15 +102,17 @@
   height: 61px;
   width: 60px;
   @media #{$tablet-condition} {
-    right: 33px;
+    right: 28px;
     top: 30px;
   }
 }
 
 .categories__item {
   position: relative;
-  flex-grow: 1;
-  flex-basis: 0;
+  @media #{$tablet-condition} {
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
   &:nth-child(2n+1) {
     background-color: $promo-color-primary;
   }

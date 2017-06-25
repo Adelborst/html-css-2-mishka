@@ -106,7 +106,8 @@
     width: 175px;
   }
   @media #{$desktop-condition} {
-    // margin-top: -35px;
+    position: relative;
+    top: -7px;
   }
 }
 
