@@ -4,7 +4,7 @@
   justify-content: flex-start;
   @media #{$tablet-condition} {
     flex-direction: row;
-    min-height: 334px;
+    height: 334px;
   }
   @media #{$desktop-condition} {
     flex-direction: column;
@@ -108,15 +108,16 @@
   // height: 72px;
   padding-top: 22px;
   padding-bottom: 27px;
-  @media #{$tablet-condition} {
-    padding-top: 23px;
-    padding-bottom: 26px;
-  }
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #ececec;
+  @media #{$tablet-condition} {
+    padding-top: 23px;
+    padding-bottom: 26px;
+    border-top: 1px solid #ececec;
+  }
 }
 
 .catalog-product__price {
