@@ -19,9 +19,12 @@
   // transition: height 0.2s ease-out;
   // height: 140px;
   // top: -20px;
-  // @media #{$tablet-condition} {
-
-  // }
+  @media #{$tablet-condition} {
+    position: relative;
+    &:hover {
+      margin-top: -5px;
+    }
+  }
 }
 
 .categories__item a {
@@ -50,10 +53,6 @@
     padding-top: 28px;
     // padding-left: 35px;
     // padding-right: 20px + 165px;
-    // &:hover {
-    //   transform: translateY(-5px);
-    //   min-height: 125px;
-    // }
   }
   @media #{$desktop-condition} {
     // margin-top: -10px;
