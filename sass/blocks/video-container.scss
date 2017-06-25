@@ -103,11 +103,26 @@
     position: absolute;
     background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: center;
     width: 100px;
     height: 78px;
-    top: calc(50% - 78px / 2);
-    left: calc(50% - 100px / 2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // top: calc(50% - 78px / 2);
+    // left: calc(50% - 100px / 2);
+  }
+  &:hover::before {
+    background-size: 120%;
+    // width: 520px;
+    // width: 120px;
+    // height: 93,6px;
+  }
+  &:active::before {
+    background-size: 80%;
+    opacity: 0.3;
+    // width: 120px;
+    // height: 93,6px;
   }
 }
 

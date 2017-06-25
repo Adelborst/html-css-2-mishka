@@ -106,8 +106,8 @@
 .catalog-product__buy-wrapper {
   // margin-top: auto;
   // height: 72px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 22px;
+  padding-bottom: 27px;
   @media #{$tablet-condition} {
     padding-top: 23px;
     padding-bottom: 26px;
@@ -134,13 +134,19 @@
 }
 
 .catalog-product__add-to-cart {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
   font-size: 0;
   width: 21px;
   height: 19px;
   @media #{$tablet-condition} {
     padding-right: 5px;
   }
-  @media #{$desktop-condition} {}
+  @media #{$desktop-condition} {
+    margin-right: 12px;
+  }
   &:hover {
     .icon-cart {
       fill: #63d1bb;

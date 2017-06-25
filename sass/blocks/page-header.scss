@@ -39,8 +39,8 @@
   }
   &--bg-toys {
     display: block;
-    padding-top: 60px;
-    min-height: 283px;
+    padding-top: 75px;
+    min-height: 286px;
     background-color: $page-header-bg-color;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -50,18 +50,19 @@
     }
     @media #{$tablet-condition} {
       background-image: url("../img/hero-desktop@1x.jpg");
-      min-height: 627px;
-      padding-top: 153px;
-      background-position: 50% 0;
+      min-height: 620px;
+      padding-top: 148px;
+      background-position: 50% -6px;
       background-size: 150%;
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/hero-desktop@2x.jpg");
       }
     }
     @media #{$desktop-condition} {
-      min-height: 627px;
-      background-position: 50% 0;
-      background-size: 1250px 750px;
+      min-height: 646px;
+      padding-top: 173px;
+      background-position: 50% 13px;
+      background-size: 1250px 760px;
     }
   }
 }

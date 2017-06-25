@@ -5,7 +5,8 @@
 }
 
 @mixin layout-centered() {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 320px;
   @media #{$tablet-condition} {
     width: 768px;
@@ -43,15 +44,19 @@
 
 @mixin container() {
   width: 260px;
-  margin: 0 auto;
-  padding: 0 30px; // outline: 1px dashed black;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
   @media #{$tablet-condition} {
     width: 668px;
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   @media #{$desktop-condition} {
     width: 1050px;
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
