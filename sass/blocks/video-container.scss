@@ -112,7 +112,8 @@
     // left: calc(50% - 100px / 2);
   }
   &:hover::before {
-    background-size: 120%;
+    transform: scale(1.2) translate(-40%,-40%);
+    // background-size: 120%;
     // width: 520px;
     // width: 120px;
     // height: 93,6px;
