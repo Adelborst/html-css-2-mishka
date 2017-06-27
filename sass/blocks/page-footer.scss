@@ -15,7 +15,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   @media #{$tablet-condition} {
-    min-height: 143px;
+    height: 143px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
