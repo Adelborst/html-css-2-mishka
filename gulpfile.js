@@ -96,8 +96,8 @@ gulp.task("html:update", ["html:copy"], function(done) {
 gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
-    "img/**",
-    "js/**",
+    "img/**/*.{jpg,png,svg}",
+    "js/**/*.js",
     "*.html"
   ], {
     base: "."
